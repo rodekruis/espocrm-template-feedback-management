@@ -35,11 +35,13 @@ This template is designed so anyone, no matter their digital skills, can collect
 - 🔄 **Clear status tracking** (open, in progress, closed)  
 - 📊 **Visual dashboards and reports** to see feedback at a glance  
 - ❓ **Pre-built examples** of questions and answer options to help you get started 
-- 👤 **Role-based permissions:** control who can view, edit, or manage feedback according to their role in EspoCRM
-- 📊 **Dashboard and Reports**: See an easy overview of feedback status and counts 
-- 📱 **Possible integration with KoboToolbox:** collect feedback offline and sync with EspoCRM when back online  
-- 📈 **Possible integration with Power BI:** connect EspoCRM data to PowerBI for advanced visualisations and reports  
+- 👤 **Role-based permissions:** control who can view, edit, or manage feedback according to their role and team in EspoCRM
 - 🛠 **Customization**: Add your own fields, layouts, dashboards and automatic flowcharts without coding  
+- 🔗 **Integrates** with:
+    - 📱 **[KoboToolbox:](/guides/kobo-integration.md)** collect feedback offline and sync with EspoCRM when back online  
+    - 📈 **[Power BI:](https://github.com/rodekruis/EspoCRM-knowledge-base/wiki/Third-party-integration#integrate-espocrm-with-powerbi-via-api)** connect EspoCRM data to PowerBI for advanced visualisations and reports  
+    - 🤖 **[AI:](/guides/qfa.md)** for analyzing qualitative feedback using Artificial Intelligence
+
 
 ---
 
