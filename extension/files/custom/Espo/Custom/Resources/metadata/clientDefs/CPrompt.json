@@ -1,0 +1,13 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-bolt-lightning",
+    "relationshipPanels": {
+        "cInsights": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

@@ -3,12 +3,6 @@
         "rows": [
             [
                 {
-                    "name": "name"
-                },
-                false
-            ],
-            [
-                {
                     "name": "sourceLevel1"
                 },
                 false
@@ -16,6 +10,12 @@
             [
                 {
                     "name": "sourceLevel2"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "name"
                 },
                 false
             ]

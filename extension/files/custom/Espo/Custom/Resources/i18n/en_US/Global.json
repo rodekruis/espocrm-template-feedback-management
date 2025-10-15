@@ -1,16 +1,23 @@
 {
     "scopeNames": {
-        "CFeedbackForm": "Feedback Form",
         "CInsight": "Insight",
-        "CSourceLevel1": "Type",
-        "CSourceLevel2": "Category",
-        "CSourceLevel3": "Code"
+        "CPrompt": "Prompt",
+        "FeedbackFormTest": "FeedbackFormTest",
+        "Region": "Region",
+        "Province": "Province",
+        "Municipality": "Municipality",
+        "CFeedbackForm": "Feedback Data"
     },
     "scopeNamesPlural": {
-        "CFeedbackForm": "Feedback Forms",
         "CInsight": "Insights",
-        "CSourceLevel1": "Types",
-        "CSourceLevel2": "Categories",
-        "CSourceLevel3": "Codes"
+        "CPrompt": "Prompts",
+        "FeedbackFormTest": "FeedbackFormTests",
+        "Region": "Regions",
+        "Province": "Provinces",
+        "Municipality": "Municipalities",
+        "CFeedbackForm": "Feedback Data"
+    },
+    "labels": {
+        "Save": "Save"
     }
 }

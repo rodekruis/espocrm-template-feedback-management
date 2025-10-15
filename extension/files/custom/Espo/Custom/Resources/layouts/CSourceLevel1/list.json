@@ -4,6 +4,16 @@
         "link": true
     },
     {
+        "name": "sourceLevel2s",
+        "width": 16,
+        "notSortable": true
+    },
+    {
+        "name": "sourceLevel3s",
+        "width": 16,
+        "notSortable": true
+    },
+    {
         "name": "modifiedAt",
         "width": 16
     },

@@ -1,13 +1,15 @@
 {
-    "controller": "controllers/record",
-    "boolFilterList": [
-        "onlyMy"
-    ],
-    "iconClass": "far fa-lightbulb",
     "relationshipPanels": {
         "feedbackForms": {
             "layout": null,
             "selectPrimaryFilterName": null
+        },
+        "prompt": {
+            "layout": null,
+            "selectPrimaryFilterName": null
         }
-    }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": "far fa-lightbulb"
 }

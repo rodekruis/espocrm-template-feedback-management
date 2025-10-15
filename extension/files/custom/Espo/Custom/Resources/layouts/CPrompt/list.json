@@ -1,0 +1,21 @@
+[
+    {
+        "name": "promptTitle",
+        "width": 16,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "promptContent",
+        "width": 30,
+        "align": "left"
+    },
+    {
+        "name": "createdAt",
+        "width": 16
+    },
+    {
+        "name": "createdBy",
+        "width": 16
+    }
+]

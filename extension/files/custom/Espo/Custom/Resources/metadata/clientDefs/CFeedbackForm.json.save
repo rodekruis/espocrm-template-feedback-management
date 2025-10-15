@@ -1,0 +1,28 @@
+{
+    "relationshipPanels": {
+        "sourceLevel2": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/category-by-type-generic"
+        },
+        "sourceLevel3": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/code-by-category-generic"
+        },
+        "regions": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+
+        "provinces": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "municipalities": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}
+

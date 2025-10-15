@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "createdAt",
+        "width": 20
+    },
+    {
+        "name": "createdBy",
+        "width": 20
+    }
+]

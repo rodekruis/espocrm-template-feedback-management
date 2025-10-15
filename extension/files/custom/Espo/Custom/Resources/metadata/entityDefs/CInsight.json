@@ -1,128 +1,245 @@
 {
     "fields": {
-        "name": {
+        "insightsID": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "prefix": "Insight-",
+            "nextNumber": 2,
+            "padLength": 4,
+            "isCustom": true
+        },
+        "confidenceScore": {
             "type": "varchar",
-            "required": false,
-            "pattern": "$noBadCharacters",
-            "options": []
+            "maxLength": 100,
+            "options": [],
+            "audited": true,
+            "isCustom": true
         },
-        "description": {
+        "quotes": {
             "type": "text",
-            "rows": 4
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "isCustom": true
         },
-        "createdAt": {
-            "type": "datetime",
+        "coverage": {
+            "type": "varchar",
+            "maxLength": 200,
+            "options": [],
+            "tooltip": true,
+            "isCustom": true
+        },
+        "responseGenerationTime": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "isCustom": true
+        },
+        "processingMessage": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "isCustom": true,
+            "default": "Currently processing input. Please refresh the page again in 2 minutes to see new status."
+        },
+        "attachment": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "audited": true,
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        },
+        "lock": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true,
+            "isCustom": true
+        },
+        "insightVerified": {
+            "type": "enum",
+            "options": [
+                "",
+                "approve",
+                "review",
+                "decline"
+            ],
+            "style": {
+                "": null,
+                "approve": "success",
+                "review": "warning",
+                "decline": "danger"
+            },
+            "maxLength": 100,
+            "isCustom": true,
+            "audited": true,
+            "displayAsLabel": true
+        },
+        "temporaryStatus": {
+            "type": "enum",
+            "options": [
+                "",
+                "wait",
+                "start"
+            ],
+            "style": {
+                "": null,
+                "wait": null,
+                "start": null
+            },
+            "audited": true,
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "modelResponse": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true,
+            "tooltip": true
+        },
+        "prompt": {
+            "type": "link",
+            "audited": true,
+            "createButton": false,
+            "tooltip": true
+        },
+        "userPromptInstructions": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": "[short instruction will come here]",
+            "isCustom": true,
             "readOnly": true
         },
-        "modifiedAt": {
-            "type": "datetime",
-            "readOnly": true
-        },
-        "createdBy": {
-            "type": "link",
+        "orInstructions": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
             "readOnly": true,
-            "view": "views/fields/user"
-        },
-        "modifiedBy": {
-            "type": "link",
-            "readOnly": true,
-            "view": "views/fields/user"
-        },
-        "assignedUser": {
-            "type": "link",
-            "required": false,
-            "view": "views/fields/assigned-user"
-        },
-        "teams": {
-            "type": "linkMultiple",
-            "view": "views/fields/teams"
+            "isCustom": true,
+            "default": "              or"
         },
         "feedbackForms": {
-            "type": "linkMultiple"
+            "tooltip": true,
+            "audited": true,
+            "required": true
         },
-        "title": {
+        "modelCompletionTokens": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "modelTotalTokens": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "modelPromptTokens": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "costPerPromptToken": {
+            "notNull": false,
+            "type": "float",
+            "default": 1.71e-6,
+            "readOnly": true,
+            "tooltip": true,
+            "isCustom": true
+        },
+        "costPerOutputToken": {
+            "notNull": false,
+            "type": "float",
+            "default": 6.84e-6,
+            "readOnly": true,
+            "tooltip": true,
+            "isCustom": true
+        },
+        "totalCost": {
+            "notNull": false,
+            "type": "float",
+            "readOnly": true,
+            "tooltip": true,
+            "isCustom": true
+        },
+        "freeTextPrompt": {
             "type": "text",
             "rowsMin": 2,
             "cutHeight": 200,
             "audited": true,
-            "rows": 1
+            "tooltip": true,
+            "isCustom": true
         },
-        "summary": {
-            "type": "text",
-            "rowsMin": 2,
-            "cutHeight": 200,
+        "numberOfFormsUsed": {
+            "type": "int",
             "audited": true,
-            "rows": 2
+            "readOnly": true,
+            "isCustom": true
         },
-        "recommendedAction": {
+        "numberOfChunks": {
+            "type": "int",
+            "isCustom": true,
+            "readOnly": true,
+            "audited": true
+        },
+        "chunksSummarized": {
             "type": "text",
             "rowsMin": 2,
             "cutHeight": 200,
-            "audited": true
+            "readOnly": true,
+            "audited": true,
+            "isCustom": true
         },
-        "summaryMetadata": {
+        "summarizedText": {
             "type": "text",
-            "rows": 2,
             "rowsMin": 2,
             "cutHeight": 200,
-            "audited": true
+            "readOnly": true,
+            "audited": true,
+            "isCustom": true
         }
     },
     "links": {
-        "createdBy": {
-            "type": "belongsTo",
-            "entity": "User"
-        },
-        "modifiedBy": {
-            "type": "belongsTo",
-            "entity": "User"
-        },
-        "assignedUser": {
-            "type": "belongsTo",
-            "entity": "User"
-        },
-        "teams": {
-            "type": "hasMany",
-            "entity": "Team",
-            "relationName": "entityTeam",
-            "layoutRelationshipsDisabled": true
-        },
         "feedbackForms": {
-            "type": "hasMany",
-            "relationName": "cFeedbackFormInsight",
-            "foreign": "insights",
-            "entity": "CFeedbackForm",
             "audited": true
+        },
+        "attachment": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "prompt": {
+            "type": "belongsTo",
+            "foreign": "cInsights",
+            "entity": "CPrompt",
+            "audited": true,
+            "isCustom": true
         }
     },
     "collection": {
         "orderBy": "createdAt",
-        "order": "desc"
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "description",
+            "modelResponse",
+            "freeTextPrompt",
+            "summary"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
     },
-    "indexes": {
-        "name": {
-            "columns": [
-                "name",
-                "deleted"
-            ]
-        },
-        "assignedUser": {
-            "columns": [
-                "assignedUserId",
-                "deleted"
-            ]
-        },
-        "createdAt": {
-            "columns": [
-                "createdAt"
-            ]
-        },
-        "createdAtId": {
-            "unique": true,
-            "columns": [
-                "createdAt",
-                "id"
-            ]
-        }
-    }
+    "optimisticConcurrencyControl": false
 }

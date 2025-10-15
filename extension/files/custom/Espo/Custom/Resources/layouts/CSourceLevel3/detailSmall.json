@@ -1,0 +1,21 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "sourceLevel1"
+                },
+                {
+                    "name": "sourceLevel2"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

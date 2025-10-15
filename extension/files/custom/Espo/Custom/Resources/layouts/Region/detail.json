@@ -1,0 +1,23 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "provinces"
+                }
+            ],
+            [
+                {
+                    "name": "municipalities"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

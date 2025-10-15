@@ -1,0 +1,20 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "province": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "cFeedbackForm": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "region": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

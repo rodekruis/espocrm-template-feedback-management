@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "type": "type",
+        "category": "category",
+        "code": "code"
+    },
+    "links": {
+        "type": "type",
+        "category": "category",
+        "code": "code"
+    },
+    "labels": {
+        "Create FeedbackFormTest": "Create FeedbackFormTest"
+    }
+}

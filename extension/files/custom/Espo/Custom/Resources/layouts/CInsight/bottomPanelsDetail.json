@@ -1,12 +1,27 @@
 {
-    "_delimiter_": {
-        "disabled": true
-    },
     "feedbackForms": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
         "index": 0
     },
-    "stream": {
-        "sticked": false,
+    "_delimiter_": {
         "index": 1
+    },
+    "stream": {
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isNotEmpty",
+                    "attribute": "feedbackFormsIds",
+                    "data": {
+                        "field": "feedbackForms"
+                    }
+                }
+            ]
+        },
+        "style": "default",
+        "sticked": false,
+        "index": 2
     }
 }

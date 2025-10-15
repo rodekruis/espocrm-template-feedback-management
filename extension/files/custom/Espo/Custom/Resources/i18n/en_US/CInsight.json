@@ -1,15 +1,60 @@
 {
     "fields": {
-        "feedbackForms": "Feedback Forms",
-        "title": "Title",
-        "summary": "Summary",
-        "recommendedAction": "Recommended Action",
-        "summaryMetadata": "Summary of metadata"
+        "insightsID": "Insights ID",
+        "confidenceScore": "Confidence Score",
+        "quotes": "Quotes",
+        "coverage": "Coverage",
+        "responseGenerationTime": "Response Generation Time",
+        "feedbackForms": "Feedback data to analyze",
+        "processingMessage": "Status",
+        "attachment": "Selection of external sources",
+        "lock": "Lock",
+        "insightVerified": "Correct insights?",
+        "temporaryStatus": "Temporary Status",
+        "modelResponse": "Answer",
+        "prompt": "Pre-made Prompt",
+        "userPromptInstructions": "Instructions on using",
+        "orInstructions": "OR",
+        "modelCompletionTokens": "Model Completion Tokens",
+        "modelTotalTokens": "Model Total Tokens",
+        "modelPromptTokens": "Model Prompt Tokens",
+        "costPerPromptToken": "CostPerPromptToken",
+        "costPerOutputToken": "Cost Per Output Token",
+        "totalCost": "Total Cost",
+        "freeTextPrompt": "Topic or question",
+        "numberOfFormsUsed": "No. Feedback Data Used",
+        "numberOfChunks": "No. of chunks",
+        "chunksSummarized": "Chunks Summarized",
+        "summarizedText": "Summarized Text"
+    },
+    "tooltips": {
+        "coverage": "Shows what percentage of total feedback contributed to the insight. Gives a sense of representativeness.",
+        "prompt": "Select a ready-to-use prompt from a library of pre-made prompts",
+        "feedbackForms": "Filter and select only the most relevant feedback forms. The system can not handle too many feedback forms at once. Please note that only the 'feedback description' field of the form will be used in the analysis.",
+        "costPerPromptToken": "1,71 euro / 1M tokens = 0.00000171 euro/token",
+        "costPerOutputToken": "6.84 euro per 1M tokens = 0.00000684 euro/token",
+        "totalCost": "In Euro",
+        "freeTextPrompt": "Make your question or topic as specific as possible and preferably only focus on one topic",
+        "modelResponse": "This response is AI-generated and based solely on information found in the provided feedback forms. It may contain inaccuracies or omissions. Please verify any important information before relying on this answer."
     },
     "links": {
-        "feedbackForms": "Feedback Forms"
+        "feedbackForms": "Selection of Feedback Forms",
+        "prompt": "Prompt"
     },
     "labels": {
         "Create CInsight": "Create Insight"
+    },
+    "options": {
+        "insightVerified": {
+            "": "",
+            "approve": "Approve",
+            "review": "Review",
+            "decline": "Decline"
+        },
+        "temporaryStatus": {
+            "": "",
+            "wait": "Wait",
+            "start": "Start process"
+        }
     }
 }

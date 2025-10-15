@@ -1,319 +1,37 @@
 {
     "fields": {
-        "insights": "Insights",
-        "sourceLevel1": "Type",
-        "sourceLevel2": "Category",
-        "sourceLevel3": "Code",
-        "enumeratorName": "Your name (staff/volunteer/enumerator recording feedback)",
-        "enumeratorEmail": "Your email address (staff/volunteer/enumerator recording feedback)",
-        "enumeratorPhone": "Your phone number (staff/volunteer/enumerator recording feedback)",
-        "datetimeReceived": "Date and Time of feedback received",
-        "followUpNeeded": "Can we contact you for follow-up?",
-        "respondentName": "Name of person giving feedback",
-        "respondentPhone": "Respondent contact information (Phone number)",
-        "respondentAddress": "Respondent contact information (Address)",
-        "feedbackChannel": "Feedback Channel",
-        "preferredContactMethod": "How would you like to be contacted?",
-        "preferredContactTime": "What is the best time to contact you?",
-        "shareConsent": "Permission to share feedback",
-        "respondentAgeGroup": "Age group of Respondent",
-        "respondentGender": "Gender of Respondent",
-        "householdSize": "Household Size",
-        "communityGroup": "Are you part of any specific community group?",
-        "serviceArea": "Service/Program Area",
-        "project": "Project",
-        "feedbackDescription": "Feedback Description",
-        "feedbackType": "Feedback Type",
-        "topic": "Topic",
-        "feedbackPriorityLevel": "Priority Level",
-        "createdAt": "Date and Time when form created/received in EspoCRM",
-        "createdBy": "Created in EspoCRM By",
-        "additionalComments": "Is there anything else you would like to add?",
-        "processImprovementSuggestion": "Would you like to suggest any improvements for our feedback process?",
-        "status": "Current Status",
-        "actionTaken": "Action Taken",
-        "responseGiven": "Response Given",
-        "datetimeClosed": "Date and Time Closed/Resolved",
-        "noteEnumerator": "Note of Staff/Volunteer/Enumerator",
-        "satisfactionScore": "Satisfaction Score",
-        "informationUseful": "Was this information useful?",
-        "perceivedHelp": "Do you feel helped?",
-        "gpsCoordinates": "GPS Coordinates",
-        "branch": "Branch",
-        "country": "Country",
-        "region": "Region / Province / State",
-        "district": "District / Municipality",
-        "subDistrict": "Sub District / Commune",
-        "locality": "City / Town / Village",
-        "site": "Camp / Site / Facility",
-        "name": "z[not in use]",
-        "sensitive": "Sensitive",
-        "description": "z[DONT USE] Description",
-        "feedbackFormID": "Feedback Form ID",
-        "datetimeFeedbackCollectionStarted": "Date and Time when collection in feedback form is started",
-        "datetimeFeedbackCollectionEnded": "Date and Time when collection in feedback form has ended",
-        "koboToolboxFormID": "z[Kobo] KoboToolboxFormID (backend ID from KoboToolbox; not the same as feedbackFormID)",
-        "koboToolboxUUID": "z[Kobo] KoboToolboxUUID (UUID when submitted in KoboToolbox; not the same as feedbackFormID)",
-        "koboToolboxFormVersion": "z[Kobo] KoboToolboxFormVersion (backend)",
-        "datetimeReceivedByKoboToolboxServer": "z[Kobo] Date time when form is received by the server of KoboToolbox",
-        "nationalSociety": "National Society",
-        "datetimeFeedbackCollectionStartedRaw": "z[unprocessed] Date and Time when collection in feedback form is started",
-        "datetimeFeedbackCollectionEndedRaw": "z[unprocessed] Date and Time when collection in feedback form has ended",
-        "datetimeReceivedByKoboToolboxServerRaw": "z[Kobo; unprocessed] Date time when form is received by the server of KoboToolbox",
-        "datetimeReceivedRaw": "z[unprocessed] Date and Time of feedback received",
-        "gpsLatitude": "GPS Latitude",
-        "gpsLongitude": "GPS Longitude",
-        "gpsAltitude": "GPS Altitude",
-        "gpsAccuracy": "GPS Accuracy",
-        "deviceIDKoboToolbox": "z[Kobo] Device ID from KoboToolbox",
-        "usernameKoboToolbox": "z[Kobo] Username from KoboToolbox",
-        "phonenumberKoboToolbox": "z[Kobo] Phone number from KoboToolbox",
-        "minutesDurationKoboForm": "z[Kobo] Minutes of the Duration of starting and finishing a KoboForm submission",
-        "programParticipantSelection": "Respondent is participant in none, one or multiple programs",
-        "category": "Category",
-        "code": "Code",
-        "contactedBefore": "Did you contact us before?",
-        "feedbackForms": "Feedback Form ID Original",
-        "feedbackFormParent": "Feedback Form ID Duplicate",
-        "languageInteraction": "Language of interaction",
-        "proxyRespondent": "For who is this person providing feedback?",
-        "secondaryPhoneNumber": "Secondary Phone Number"
+        "datetimeReceived": "z[Kobo] Date and Time of feedback received",
+        "createdAt": "Date and Time when form created",
+        "datetimeFeedbackCollectionStarted": "z[Kobo] Date and Time when collection in feedback form is started",
+        "enumeratorEmail": "z[Kobo] Your email address (staff/volunteer/enumerator recording feedback)",
+        "datetimeFeedbackCollectionEnded": "z[Kobo] Date and Time when collection in feedback form has ended",
+        "enumeratorName": "z[Kobo] Your name (staff/volunteer/enumerator recording feedback)",
+        "regions": "Regions",
+        "provinces": "Provinces",
+        "municipalities": "Municipalities",
+        "additionalComments": "Other observations",
+        "processImprovementSuggestion": "Improvements or suggestions on feedback process",
+        "generatedTitle": "Title",
+        "daysDifferenceBetweenCreatedClosed": "Days between Creating and Closing Feedback"
     },
     "links": {
-        "insights": "Insights",
-        "sourceLevel1": "Type",
-        "sourceLevel2": "Category",
-        "sourceLevel3": "Code",
-        "feedbackForms": "Feedback Form ID Original",
-        "feedbackFormParent": "Feedback Form ID Duplicate"
-    },
-    "labels": {
-        "Create CFeedbackForm": "Create Feedback Form"
+        "regions": "Regions",
+        "provinces": "Provinces",
+        "municipalities": "Municipalities"
     },
     "options": {
-        "followUpNeeded": {
-            "yes": "Yes",
-            "no": "No",
-            "": ""
-        },
-        "feedbackChannel": {
-            "face_to_face": "Face to Face",
-            "phone_call": "Phone Call",
-            "sms": "SMS",
-            "whatsapp": "WhatsApp",
-            "facebook": "Facebook",
-            "suggestion_box": "Suggestion Box",
-            "community_meeting": "Community Meeting",
-            "physical_helpdesk": "Physical Helpdesk",
-            "email": "Email",
-            "other": "Other",
-            "": ""
-        },
-        "preferredContactMethod": {
-            "phone_call": "Phone Call",
-            "sms": "SMS",
-            "facebook": "Facebook",
-            "email": "Email",
-            "whatsapp": "WhatsApp",
-            "in_person_meeting": "In-person Meeting",
-            "no_response_needed": "No Response Needed",
-            "other": "Other",
-            "": ""
-        },
-        "preferredContactTime": {
-            "morning": "Morning",
-            "afternoon": "Afternoon",
-            "evening": "Evening",
-            "": ""
-        },
-        "shareConsent": {
-            "yes_anonymously": "Yes, anonymously",
-            "yes_with_name": "Yes, with name",
-            "no": "No",
-            "": ""
-        },
-        "respondentAgeGroup": {
-            "under_18": "Under 18",
-            "18_39": "From 18 to 39",
-            "40_59": "From 40 to 59",
-            "60_or_above": "60 or above",
-            "prefer_not_to_say": "Prefer not to say",
-            "": ""
-        },
-        "respondentGender": {
-            "female": "Female",
-            "male": "Male",
-            "other": "Other",
-            "prefer_not_to_say": "Prefer not to say",
-            "": ""
-        },
-        "householdSize": {
-            "1": "1 person",
-            "2_3": "2-3 people",
-            "4_5": "4-5 people",
-            "6_8": "6-8 people",
-            "9_or_more": "9 or more people",
-            "prefer_not_to_say": "Prefer not to say",
-            "": ""
-        },
-        "communityGroup": {
-            "refugee": "Refugee",
-            "idp": "Internally Displaced Person",
-            "local_community_member": "Local Community Member",
-            "returnee": "Returnee",
-            "other": "Other",
-            "": ""
-        },
-        "serviceArea": {
-            "health": "Health",
-            "wash": "Water, Sanitation and Hygiene (WASH)",
-            "shelter": "Shelter",
-            "food_assistance": "Food Assistance",
-            "nutrition": "Nutrition",
-            "education": "Education",
-            "livelihoods": "Livelihoods",
-            "protection": "Protection",
-            "cccm": "Camp Coordination and Camp Management (CCCM)",
-            "logistics": "Logistics",
-            "cva": "Cash and Voucher Assistance",
-            "pss": "Psychosocial Support",
-            "drr": "Disaster Risk Reduction (DRR)",
-            "early_warning_systems": "Early Warning Systems",
-            "gbv": "Gender-Based Violence (GBV)",
-            "child_protection": "Child Protection",
-            "migration_and_displacement": "Migration and Displacement Services",
-            "rfl": "Restoring Family Links (RFL)",
-            "nfi": "Non-Food Items (NFIs)",
-            "other": "Other"
-        },
-        "project": {
-            "": "",
-            "example_project_1": "Example Project 1",
-            "example_project_2": "Example Project 2"
-        },
-        "feedbackType": {
-            "question": "Question",
-            "request": "Request",
-            "suggestion": "Suggestion",
-            "complaint": "Complaint",
-            "compliment": "Compliment, Encouragement or Praise",
-            "observation": "Observation",
-            "belief": "Belief",
-            "report_of_incident_or_concern": "Report of Incident or Concern",
-            "other": "Other",
-            "": ""
-        },
-        "topic": {
-            "": "",
-            "example_topic_1": "Example Topic 1",
-            "example_topic_2": "Example Topic 2"
-        },
-        "feedbackPriorityLevel": {
-            "high": "High",
-            "medium": "Medium",
-            "low": "Low",
-            "": ""
-        },
-        "status": {
-            "open": "Open",
-            "in_progress": "In Progress",
-            "closed": "Closed",
-            "": ""
-        },
-        "satisfactionScore": {
-            "1": "1 - Very Negative",
-            "2": "2- Somewhat Negative",
-            "3": "3 - Neutral",
-            "4": "4 - Somewhat Positive",
-            "5": "5 - Very Positive",
-            "": ""
-        },
-        "informationUseful": {
-            "yes": "Yes",
-            "no": "No",
-            "": ""
-        },
-        "perceivedHelp": {
-            "yes": "Yes",
-            "no": "No",
-            "": ""
-        },
-        "branch": {
-            "": "",
-            "example_branch_1": "Example Branch 1",
-            "example_branch_2": "Example Branch 2"
-        },
         "country": {
             "": "",
             "example_country_1": "Example Country 1",
-            "example_country_2": "Example Country 2"
-        },
-        "region": {
-            "": "",
-            "region_example_1": "Region Example 1",
-            "region_example_2": "Region Example 2"
-        },
-        "district": {
-            "": "",
-            "district__example_1": "District Example 1",
-            "district_example_2": "District Example 2"
-        },
-        "subDistrict": {
-            "": "",
-            "subdistrict_example_1": "Subdistrict Example 1",
-            "subdistrict_example_2": "Subdistrict Example 2"
-        },
-        "locality": {
-            "": "",
-            "locality_example_1": "Locality Example 1",
-            "locality_example_2": "Locality Example 2"
-        },
-        "site": {
-            "": "",
-            "site_example_1": "Site Example 1",
-            "site_example_2": "Site Example 2"
-        },
-        "sensitive": {
-            "yes": "Yes",
-            "no": "No",
-            "": ""
-        },
-        "nationalSociety": {
-            "": "",
-            "example_national_society_1": "Example National Society 1",
-            "example_national_society_2": "Example National Society 2"
-        },
-        "programParticipantSelection": {
-            "": "",
-            "no-program": "No programs ",
-            "program-example-1": "Program example 1",
-            "program-example-2": "Program example 2"
-        },
-        "category": {
-            "": "",
-            "example-1": "Example category 1",
-            "example-2": "Example category 2"
-        },
-        "code": {
-            "": "",
-            "example-1": "Example code 1",
-            "example-2": "Example-code 2"
-        },
-        "contactedBefore": {
-            "": "",
-            "yes": "Yes",
-            "no": "No"
-        },
-        "languageInteraction": {
-            "": "",
-            "example_language_1": "example_language_1",
-            "example_language_2": "example_language_2"
-        },
-        "proxyRespondent": {
-            "": "",
-            "self": "For themself",
-            "someone_else": "For someone else (e.g. family member)",
-            "community": "On behalf of the community"
+            "example_country_2": "Example Country 2",
+            "ghana": "Ghana"
         }
+    },
+    "labels": {
+        "Create CFeedbackForm": "Create Feedback Data"
+    },
+    "tooltips": {
+        "generatedTitle": "This title is AI-generated and based solely on the description in the feedback form. It may contain inaccuracies or omissions.",
+        "feedbackPriorityLevel": "High: within 24 hours\nMedium: within 48 hours and 1 week\nLow: more than 1 week"
     }
 }

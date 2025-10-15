@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "name = insightsID;\ntotalCost = ( costPerPromptToken * modelPromptTokens ) + ( costPerOutputToken * modelCompletionTokens );"
+}

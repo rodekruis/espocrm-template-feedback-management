@@ -1,23 +1,12 @@
 {
-    "controller": "controllers/record",
-    "boolFilterList": [
-        "onlyMy"
-    ],
-    "iconClass": "fas fa-3",
     "relationshipPanels": {
-        "feedbackForm": {
+        "feedbackFormTests": {
             "layout": null,
             "selectPrimaryFilterName": null
         },
         "sourceLevel2": {
             "layout": null,
             "selectPrimaryFilterName": null
-        },
-        "sourceLevel1": {
-            "layout": null,
-            "selectPrimaryFilterName": null
         }
-    },
-    "kanbanViewMode": false,
-    "color": null
+    }
 }

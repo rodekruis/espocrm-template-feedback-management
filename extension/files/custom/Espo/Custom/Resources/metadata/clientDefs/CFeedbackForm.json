@@ -1,63 +1,33 @@
 {
-    "controller": "controllers/record",
-    "boolFilterList": [
-        "onlyMy"
-    ],
-    "iconClass": "fas fa-clipboard-list",
     "relationshipPanels": {
-        "insights": {
-            "layout": null,
-            "selectPrimaryFilterName": null
-        },
-        "sourceLevel1": {
-            "layout": null,
-            "selectPrimaryFilterName": null
-        },
         "sourceLevel2": {
             "layout": null,
-            "selectPrimaryFilterName": null
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/category-by-type-generic"
         },
         "sourceLevel3": {
             "layout": null,
-            "selectPrimaryFilterName": null
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/code-by-category-generic"
         },
-        "feedbackForms": {
+        "regions": {
             "layout": null,
             "selectPrimaryFilterName": null
         },
-        "feedbackFormParent": {
+        "provinces": {
             "layout": null,
-            "selectPrimaryFilterName": null
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/province-by-region",
+            "createHandler": "custom:handlers/select-related/province-by-region"
+        },
+        "municipalities": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/municipality-by-province",
+            "createHandler": "custom:handlers/select-related/municipality-by-province"
         }
     },
     "kanbanViewMode": false,
     "color": null,
-    "dynamicLogic": {
-        "fields": {
-            "feedbackFormParent": {
-                "visible": {
-                    "conditionGroup": [
-                        {
-                            "type": "isNotEmpty",
-                            "attribute": "feedbackFormParentId",
-                            "data": {
-                                "field": "feedbackFormParent"
-                            }
-                        }
-                    ]
-                }
-            },
-            "feedbackForms": {
-                "visible": {
-                    "conditionGroup": [
-                        {
-                            "type": "equals",
-                            "attribute": "contactedBefore",
-                            "value": "yes"
-                        }
-                    ]
-                }
-            }
-        }
-    }
+    "iconClass": "fas fa-clipboard-list"
 }

@@ -3,33 +3,32 @@
         "rows": [
             [
                 {
-                    "name": "contactedBefore"
-                },
-                {
-                    "name": "feedbackForms"
-                },
-                {
-                    "name": "feedbackFormParent"
-                }
-            ],
-            [
-                {
                     "name": "feedbackFormID"
                 },
-                false,
-                false,
                 {
-                    "name": "datetimeReceived"
+                    "name": "generatedTitle"
                 }
             ],
             [
                 {
                     "name": "feedbackDescription"
                 }
-            ],
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "success",
+        "customLabel": "Feedback Form Information"
+    },
+    {
+        "rows": [
             [
                 {
-                    "name": "feedbackChannel"
+                    "name": "sensitive"
                 },
                 false
             ],
@@ -43,14 +42,6 @@
             ],
             [
                 {
-                    "name": "sensitive"
-                },
-                {
-                    "name": "topic"
-                }
-            ],
-            [
-                {
                     "name": "sourceLevel1"
                 },
                 {
@@ -58,6 +49,14 @@
                 },
                 {
                     "name": "sourceLevel3"
+                }
+            ],
+            [
+                {
+                    "name": "feedbackChannel"
+                },
+                {
+                    "name": "topic"
                 }
             ],
             [
@@ -75,10 +74,11 @@
         "style": "info",
         "dynamicLogicStyled": null,
         "tabBreak": false,
+        "tabLabel": null,
         "hidden": false,
         "noteText": null,
-        "noteStyle": "success",
-        "customLabel": "Feedback Form Information"
+        "noteStyle": "info",
+        "customLabel": "Additional Information"
     },
     {
         "rows": [
@@ -105,6 +105,23 @@
                 {
                     "name": "site"
                 }
+            ],
+            [
+                {
+                    "name": "country"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "regions"
+                },
+                {
+                    "name": "provinces"
+                },
+                {
+                    "name": "municipalities"
+                }
             ]
         ],
         "dynamicLogicVisible": null,
@@ -115,10 +132,21 @@
         "hidden": false,
         "noteText": null,
         "noteStyle": "info",
-        "customLabel": "Location"
+        "customLabel": "Location [example fields]"
     },
     {
         "rows": [
+            [
+                {
+                    "name": "contactedBefore"
+                },
+                {
+                    "name": "feedbackForms"
+                },
+                {
+                    "name": "feedbackFormParent"
+                }
+            ],
             [
                 {
                     "name": "respondentAgeGroup"
@@ -234,6 +262,12 @@
                 {
                     "name": "satisfactionScore"
                 }
+            ],
+            [
+                {
+                    "name": "daysDifferenceBetweenCreatedClosed"
+                },
+                false
             ]
         ],
         "dynamicLogicVisible": null,

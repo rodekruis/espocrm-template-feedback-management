@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "provinces": "Provinces",
+        "cFeedbackForm": "Feedback Form",
+        "municipalities": "Municipalities"
+    },
+    "links": {
+        "provinces": "Provinces",
+        "cFeedbackForm": "Feedback Form",
+        "municipalities": "Municipalities"
+    },
+    "labels": {
+        "Create Region": "Create Region"
+    }
+}

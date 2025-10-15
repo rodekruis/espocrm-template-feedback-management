@@ -1,0 +1,23 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "region"
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "municipalities"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

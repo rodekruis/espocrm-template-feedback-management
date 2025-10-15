@@ -1,0 +1,27 @@
+[
+    {
+        "name": "insightsID",
+        "width": 8,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "freeTextPrompt",
+        "width": 20,
+        "align": "left"
+    },
+    {
+        "name": "modelResponse",
+        "align": "left"
+    },
+    {
+        "name": "numberOfFormsUsed",
+        "width": 15,
+        "align": "left"
+    },
+    {
+        "name": "createdAt",
+        "width": 10,
+        "align": "left"
+    }
+]

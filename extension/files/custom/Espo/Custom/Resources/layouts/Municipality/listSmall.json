@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "region",
+        "width": 20
+    },
+    {
+        "name": "province",
+        "width": 20
+    },
+    {
+        "name": "createdAt",
+        "width": 20
+    },
+    {
+        "name": "createdBy",
+        "width": 20
+    }
+]

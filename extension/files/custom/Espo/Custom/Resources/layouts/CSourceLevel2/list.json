@@ -4,6 +4,10 @@
         "link": true
     },
     {
+        "name": "sourceLevel1",
+        "width": 16
+    },
+    {
         "name": "modifiedAt",
         "width": 16
     },
