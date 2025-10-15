@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "feedbackForm": "Feedback Form",
+        "sourceLevel1": "Type",
+        "sourceLevel3s": "Codes"
+    },
+    "links": {
+        "feedbackForm": "Feedback Form",
+        "sourceLevel1": "Type",
+        "sourceLevel3s": "Codes"
+    },
+    "labels": {
+        "Create CSourceLevel2": "Create Category"
+    }
+}

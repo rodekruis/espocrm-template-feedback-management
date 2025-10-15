@@ -1,0 +1,12 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "feedbackForms": {
+        "index": 0
+    },
+    "stream": {
+        "sticked": false,
+        "index": 1
+    }
+}

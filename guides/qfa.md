@@ -1,4 +1,4 @@
-# Qualitative Feedback Analysis (AI-powered)
+# Qualitative Feedback Analysis
 
 ## What is it?
 Within the Feedback Management Template there is the possibility to enable qualitative feedback analysis (QFA). This enables structured, actionable analysis of free-text feedback within EspoCRM. It consists of two parts:
@@ -141,4 +141,5 @@ A: Insight generation in most-common multiple languages is supported or planned,
 - Planned enhancements for UI and UX
 - Better error handling and user notifications.
 - Improve classification accuracy and insight usefulness.
+- Add a section on the risks of using AI for analysis (bias amplification, misrepresentation, hallucination, loss of outliers, context & nuance, difficulty handling ambiguity & contradiction, etc.) 
 

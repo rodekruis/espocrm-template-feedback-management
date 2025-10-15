@@ -1,0 +1,33 @@
+[
+    {
+        "name": "feedbackFormID",
+        "width": 16,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "datetimeReceived",
+        "width": 16
+    },
+    {
+        "name": "feedbackType",
+        "width": 16
+    },
+    {
+        "name": "feedbackChannel",
+        "width": 16,
+        "notSortable": true
+    },
+    {
+        "name": "branch",
+        "width": 16
+    },
+    {
+        "name": "status",
+        "width": 16
+    },
+    {
+        "name": "feedbackPriorityLevel",
+        "width": 16
+    }
+]

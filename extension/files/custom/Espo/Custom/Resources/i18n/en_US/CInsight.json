@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "feedbackForms": "Feedback Forms",
+        "title": "Title",
+        "summary": "Summary",
+        "recommendedAction": "Recommended Action",
+        "summaryMetadata": "Summary of metadata"
+    },
+    "links": {
+        "feedbackForms": "Feedback Forms"
+    },
+    "labels": {
+        "Create CInsight": "Create Insight"
+    }
+}

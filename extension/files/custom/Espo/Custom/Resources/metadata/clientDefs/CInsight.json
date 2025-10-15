@@ -1,0 +1,13 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "far fa-lightbulb",
+    "relationshipPanels": {
+        "feedbackForms": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

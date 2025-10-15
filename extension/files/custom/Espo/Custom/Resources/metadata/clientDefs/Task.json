@@ -1,15 +1,5 @@
 {
-    "relationshipPanels": {
-        "cProgram": {
-            "layout": null,
-            "selectPrimaryFilterName": null
-        },
-        "parent": {
-            "layout": null,
-            "selectPrimaryFilterName": null
-        }
-    },
     "kanbanViewMode": true,
-    "color": "#e6e6fa",
+    "color": null,
     "iconClass": "fas fa-tasks"
 }

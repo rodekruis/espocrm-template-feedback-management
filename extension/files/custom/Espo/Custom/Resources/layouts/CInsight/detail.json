@@ -1,0 +1,32 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "title"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "summary"
+                },
+                {
+                    "name": "summaryMetadata"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "recommendedAction"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

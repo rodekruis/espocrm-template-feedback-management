@@ -1,17 +1,12 @@
 {
-    "fields": {
-        "parent": {
-            "entityList": [
-                "Account",
-                "Lead",
-                "Contact",
-                "Opportunity",
-                "Case",
-                "CProgram",
-                "CTask",
-                "CPersonAffected",
-                "CCUser"
-            ]
-        }
-    }
+    "collection": {
+        "orderBy": "dateStart",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false
 }

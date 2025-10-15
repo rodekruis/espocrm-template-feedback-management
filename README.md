@@ -85,9 +85,13 @@ The following steps will install the template itself and recommends the installa
    1. Go to **Administration ▸ User Interface ▸ General**.
    2. Change **Theme** to `Light` and `Top Navbar` 
    2. Go to **Administration ▸ User Interface ▸ Navbar**.
-   4. Under **Tab List**, add the following in this order: `Feedback Forms`, `...` and `Reports`
+   4. Under **Tab List**, add the following in this order: `Feedback Data`, `...` and `Reports`
    5. Save your changes. Now, you have adjusted the layout, you will see these entities in your Navbar and can access them easily at any time.
-
+8. **Adjust general Settings:**
+   1. Go to **Administration ▸ Settings ▸ Locale**
+   2. Add your preferred timezones and date format
+   3. Go to **Administration ▸ Settings ▸ General**
+   4. Add `Feedback Data` and `Insight` to the 'Global Search Entity List'
 
 ---
 

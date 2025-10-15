@@ -1,0 +1,15 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "sourceLevel3s": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": true,
+        "index": 0
+    },
+    "stream": {
+        "sticked": false,
+        "index": 1
+    }
+}

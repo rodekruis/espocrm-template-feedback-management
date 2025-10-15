@@ -1,0 +1,128 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": false,
+            "pattern": "$noBadCharacters",
+            "options": []
+        },
+        "description": {
+            "type": "text",
+            "rows": 4
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "feedbackForms": {
+            "type": "linkMultiple"
+        },
+        "title": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "rows": 1
+        },
+        "summary": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "rows": 2
+        },
+        "recommendedAction": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "summaryMetadata": {
+            "type": "text",
+            "rows": 2,
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "feedbackForms": {
+            "type": "hasMany",
+            "relationName": "cFeedbackFormInsight",
+            "foreign": "insights",
+            "entity": "CFeedbackForm",
+            "audited": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

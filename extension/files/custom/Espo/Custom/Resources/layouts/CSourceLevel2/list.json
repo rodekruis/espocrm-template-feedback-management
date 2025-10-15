@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "modifiedAt",
+        "width": 16
+    },
+    {
+        "name": "modifiedBy",
+        "width": 16
+    }
+]

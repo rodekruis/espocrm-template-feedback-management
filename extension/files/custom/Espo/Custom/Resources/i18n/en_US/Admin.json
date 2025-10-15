@@ -1,5 +1,6 @@
 {
-    "labels": {
-        "is recommended": "Is recommended"
+    "fields": {
+        "optionsReference": "Options Reference",
+        "options": "Options (important when using KoboConnect: use lowercase and no whitespaces as backend name/'value' and match them with the Kobo 'choices'/'name')"
     }
 }
