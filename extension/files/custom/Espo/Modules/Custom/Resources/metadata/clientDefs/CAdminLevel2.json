@@ -1,0 +1,21 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-location-dot",
+    "relationshipPanels": {
+        "feedbackDatas": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "adminLevel1": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "adminLevel3": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

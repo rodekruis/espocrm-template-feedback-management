@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "insightsID": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "createdAt"
+                    }
+                ]
+            }
+        },
+        "feedbackForms": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isEmpty",
+                        "attribute": "modelResponse"
+                    }
+                ]
+            }
+        }
+    }
+}

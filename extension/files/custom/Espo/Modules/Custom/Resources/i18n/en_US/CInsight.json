@@ -1,0 +1,51 @@
+{
+    "fields": {
+        "selectionExternalSources": "Selection of external sources",
+        "chunksSummarized": "Chunks Summarized",
+        "confidenceScore": "Confidence Score",
+        "costPerOutputToken": "Cost Per Output Token",
+        "costPerPromptToken": "Cost Per Prompt Token",
+        "coverage": "Coverage",
+        "freeTextPrompt": "Topic or question",
+        "insightVerified": "Correct insights?",
+        "insightsID": "Insights ID",
+        "lock": "Lock",
+        "modelCompletionTokens": "Model Completion Tokens",
+        "modelPromptTokens": "Model Prompt Tokens",
+        "modelResponse": "Answer",
+        "modelTotalTokens": "Model Total Tokens",
+        "numberOfChunks": "Number Of Chunks",
+        "numberOfFormsUsed": "Number Of Forms Used",
+        "processingMessage": "Status",
+        "quotes": "Quotes",
+        "recommendedAction": "Recommended Action",
+        "responseGenerationTime": "Response Generation Time",
+        "title": "Title",
+        "totalCost": "Total Cost",
+        "userPromptInstructions": "Instructions on using",
+        "feedbackDatas": "Feedback data to analyze"
+    },
+    "links": {
+        "feedbackDatas": "Selection of Feedback Forms"
+    },
+    "labels": {
+        "Create CInsight": "Create Insight"
+    },
+    "tooltips": {
+        "costPerOutputToken": "6.84 euro per 1M tokens = 0.00000684 euro/token (approximation)",
+        "costPerPromptToken": "1,71 euro / 1M tokens = 0.00000171 euro/token (approximation)",
+        "coverage": "Shows what percentage of total feedback contributed to the insight. Gives a sense of representativeness.",
+        "freeTextPrompt": "Make your question or topic as specific as possible and preferably only focus on one topic",
+        "modelResponse": "This response is AI-generated and based solely on information found in the provided feedback forms. It may contain inaccuracies or omissions. Please verify any important information before relying on this answer.",
+        "totalCost": "In Euro",
+        "feedbackDatas": "Filter and select only the most relevant feedback forms. The system can not handle too many feedback forms at once. Please note that only the 'feedback description' field of the form will be used in the analysis."
+    },
+    "options": {
+        "insightVerified": {
+            "": "",
+            "approve": "Approve",
+            "review": "Review",
+            "decline": "Decline"
+        }
+    }
+}

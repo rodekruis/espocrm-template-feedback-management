@@ -1,0 +1,5 @@
+{
+    "messages": {
+        "selectExtensionPackage": "Select extension package [this is dev, so this is the mother instance of the extension (FMT). Dont install the extension itself on this instance since it will be needed to recreate a new dev instance from scratch."
+    }
+}

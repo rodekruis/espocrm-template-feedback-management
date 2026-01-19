@@ -1,0 +1,22 @@
+{
+    "scopeNames": {
+        "CFeedbackData": "Feedback Data",
+        "CInsight": "Insight",
+        "CAdminlevel1": "Admin Level 1",
+        "CAdminLevel2": "Admin Level 2",
+        "CAdminLevel3": "Admin Level 3",
+        "CCodingLevel1": "Coding Level 1",
+        "CCodingLevel2": "Coding Level 2",
+        "CCodingLevel3": "Coding Level 3"
+    },
+    "scopeNamesPlural": {
+        "CFeedbackData": "Feedback Data",
+        "CInsight": "Insights",
+        "CAdminlevel1": "Admin Level 1s",
+        "CAdminLevel2": "Admin Level 2s",
+        "CAdminLevel3": "Admin Level 3s",
+        "CCodingLevel1": "Coding Level 1s",
+        "CCodingLevel2": "Coding Level 2s",
+        "CCodingLevel3": "Coding Level 3s"
+    }
+}

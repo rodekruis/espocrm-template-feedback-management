@@ -1,0 +1,23 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "type": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "category": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+	    "selectHandler": "custom:handlers/select-related/category-by-type",
+           "createHandler": "custom:handlers/select-related/category-by-type"
+        },
+        "code": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+	   "selectHandler": "custom:handlers/select-related/code-by-category"
+        }
+    }
+}

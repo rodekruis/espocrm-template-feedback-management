@@ -1,0 +1,12 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "adminLevel2": {
+        "index": 0
+    },
+    "stream": {
+        "sticked": false,
+        "index": 1
+    }
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "promptTitle"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "promptContent"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

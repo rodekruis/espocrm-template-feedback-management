@@ -1,0 +1,156 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "generatedTitle"
+                },
+                false,
+                {
+                    "name": "feedbackFormID"
+                }
+            ],
+            [
+                {
+                    "name": "feedbackDescription"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Feedback Form Information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "codingLevel1"
+                },
+                {
+                    "name": "codingLevel2"
+                },
+                {
+                    "name": "codingLevel3"
+                }
+            ],
+            [
+                {
+                    "name": "project"
+                },
+                {
+                    "name": "feedbackChannel"
+                },
+                {
+                    "name": "sensitive"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Additional Information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "adminLevel1"
+                },
+                {
+                    "name": "adminLevel2"
+                },
+                {
+                    "name": "adminLevel3"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Location"
+    },
+    {
+        "rows": [],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": true,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Feedback Respondent Information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "followUpNeeded"
+                },
+                false,
+                false
+            ],
+            [
+                {
+                    "name": "respondentName"
+                },
+                {
+                    "name": "respondentPhone"
+                },
+                {
+                    "name": "languageInteraction"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Follow-up Needed"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "feedbackPriorityLevel"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "responseGiven"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "info",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Action Panel"
+    }
+]

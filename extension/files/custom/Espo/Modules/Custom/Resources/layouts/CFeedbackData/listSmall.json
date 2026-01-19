@@ -1,0 +1,28 @@
+[
+    {
+        "name": "feedbackFormID",
+        "width": 20,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "generatedTitle",
+        "width": 20
+    },
+    {
+        "name": "status",
+        "width": 20
+    },
+    {
+        "name": "feedbackPriorityLevel",
+        "width": 20
+    },
+    {
+        "name": "assignedUser",
+        "width": 20
+    },
+    {
+        "name": "createdAt",
+        "width": 20
+    }
+]

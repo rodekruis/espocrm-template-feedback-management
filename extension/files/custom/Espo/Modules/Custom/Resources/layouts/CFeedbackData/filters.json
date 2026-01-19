@@ -1,0 +1,15 @@
+[
+    "branch",
+    "status",
+    "feedbackPriorityLevel",
+    "feedbackChannel",
+    "createdAt",
+    "assignedUser",
+    "languageInteraction",
+    "adminLevel1",
+    "adminLevel2",
+    "adminLevel3",
+    "codingLevel1",
+    "codingLevel2",
+    "codingLevel3"
+]

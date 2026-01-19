@@ -1,0 +1,43 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-clipboard-list",
+    "relationshipPanels": {
+        "insights": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "adminLevel2": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/adminLevel2-by-adminLevel1"
+        },
+        "adminLevel3": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/adminLevel3-filtered"
+        },
+        "adminLevel1": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "codingLevel1": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "codingLevel2": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/codingLevel2-by-codingLevel1"
+        },
+        "codingLevel3": {
+            "layout": null,
+            "selectPrimaryFilterName": null,
+            "selectHandler": "custom:handlers/select-related/codingLevel3-filtered"
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null
+}

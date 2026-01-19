@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "feedbackDatas": "Feedback Datas",
+        "adminLevel2": "Admin Level 2",
+        "adminLevel3": "Admin Level 3"
+    },
+    "links": {
+        "feedbackDatas": "Feedback Datas",
+        "adminLevel2": "Admin Level 2",
+        "adminLevel3": "Admin Level 3"
+    },
+    "labels": {
+        "Create CAdminlevel1": "Create Admin Level 1"
+    }
+}

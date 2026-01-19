@@ -1,0 +1,23 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "codingLevel1"
+                }
+            ],
+            [
+                {
+                    "name": "codingLevel2"
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

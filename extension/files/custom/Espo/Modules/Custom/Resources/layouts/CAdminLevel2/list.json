@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "adminLevel1",
+        "width": 16
+    },
+    {
+        "name": "createdAt",
+        "width": 16
+    }
+]

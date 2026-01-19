@@ -36,6 +36,7 @@ This template is designed so anyone, no matter their digital skills, can collect
 - 📊 **Visual dashboards and reports** to see feedback at a glance  
 - ❓ **Pre-built examples** of questions and answer options to help you get started 
 - 👤 **Role-based permissions:** control who can view, edit, or manage feedback according to their role and team in EspoCRM
+- 🧭 **Cascading hierarchical classification** for both administrative levels and  coding frameworks (e.g. Province → District → Branch, Type → Category → Code)
 - 🛠 **Customization**: Add your own fields, layouts, dashboards and automatic flowcharts without coding  
 - 🔗 **Integrates** with:
     - 📱 **[KoboToolbox:](/guides/kobo-integration.md)** collect feedback offline and sync with EspoCRM when back online  
@@ -57,7 +58,7 @@ These are needed to install and use the template:
 These are not required, but will improve your experience:
 
 - **Backup of your EspoCRM data**  
-  (Recommended before installation.
+  (Recommended before installation.)
 - **Email notifications configured**  
   (So your team can receive alerts about new feedback.)
 - **Single Sign-On (SSO) configured**  

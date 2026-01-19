@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "codingLevel3": "Coding Level 3",
+        "codingLevel1": "Coding Level 1",
+        "feedbackDatas": "Feedback Datas"
+    },
+    "links": {
+        "codingLevel3": "Coding Level 3",
+        "codingLevel1": "Coding Level 1",
+        "feedbackDatas": "Feedback Datas"
+    },
+    "labels": {
+        "Create CCodingLevel2": "Create Coding Level 2"
+    }
+}

@@ -1,0 +1,937 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": false,
+            "pattern": "$noBadCharacters",
+            "options": []
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "notNull": false,
+            "type": "datetime",
+            "readOnly": true,
+            "minuteStep": 1
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "actionTaken": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "additionalComments": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "branch": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_branch_1",
+                "example_branch_2"
+            ],
+            "style": {
+                "": null,
+                "example_branch_1": null,
+                "example_branch_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "communityGroup": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                "",
+                "refugee",
+                "idp",
+                "local_community_member",
+                "returnee",
+                "other"
+            ],
+            "style": {
+                "": null,
+                "refugee": null,
+                "idp": null,
+                "local_community_member": null,
+                "returnee": null,
+                "other": null
+            },
+            "allowCustomOptions": true,
+            "audited": true
+        },
+        "contactedBefore": {
+            "type": "enum",
+            "options": [
+                "",
+                "yes",
+                "no"
+            ],
+            "style": {
+                "": null,
+                "yes": null,
+                "no": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "country": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_country_1",
+                "example_country_2"
+            ],
+            "style": {
+                "": null,
+                "example_country_1": null,
+                "example_country_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "datetimeClosed": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 10,
+            "readOnly": true
+        },
+        "datetimeFeedbackCollectionEnded": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 1,
+            "audited": true
+        },
+        "datetimeFeedbackCollectionEndedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "datetimeFeedbackCollectionStarted": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 1,
+            "audited": true
+        },
+        "datetimeFeedbackCollectionStartedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "datetimeReceived": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 10,
+            "audited": true
+        },
+        "datetimeReceivedByKoboToolboxServer": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 1,
+            "audited": true,
+            "readOnlyAfterCreate": true
+        },
+        "datetimeReceivedByKoboToolboxServerRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "datetimeReceivedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "deviceIDKoboToolbox": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "district": {
+            "type": "enum",
+            "options": [
+                "",
+                "district_example_1",
+                "district_example_2"
+            ],
+            "style": {
+                "": null,
+                "district_example_1": null,
+                "district_example_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "enumeratorEmail": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "enumeratorName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "enumeratorPhone": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "feedbackDescription": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "feedbackFormID": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "copyToClipboard": true,
+            "prefix": "Form-"
+        },
+        "feedbackPriorityLevel": {
+            "type": "enum",
+            "options": [
+                "",
+                "high",
+                "medium",
+                "low"
+            ],
+            "style": {
+                "": null,
+                "high": "danger",
+                "medium": "warning",
+                "low": "success"
+            },
+            "displayAsLabel": true,
+            "audited": true,
+            "maxLength": 100
+        },
+        "followUpNeeded": {
+            "type": "enum",
+            "options": [
+                "",
+                "yes",
+                "no"
+            ],
+            "style": {
+                "": null,
+                "yes": null,
+                "no": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "gpsAccuracy": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "audited": true
+        },
+        "gpsAltitude": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "gpsCoordinates": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "gpsLatitude": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "gpsLongitude": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "householdSize": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "",
+                "1",
+                "2_3",
+                "4_5",
+                "6_8",
+                "9_or_more",
+                "prefer_not_to_say"
+            ],
+            "style": {
+                "1": null,
+                "": null,
+                "2_3": null,
+                "4_5": null,
+                "6_8": null,
+                "9_or_more": null,
+                "prefer_not_to_say": null
+            },
+            "maxLength": 100
+        },
+        "informationUseful": {
+            "type": "enum",
+            "options": [
+                "",
+                "yes",
+                "no"
+            ],
+            "style": {
+                "": null,
+                "yes": null,
+                "no": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "koboToolboxFormID": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "koboToolboxFormVersion": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "koboToolboxUUID": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnlyAfterCreate": true,
+            "options": []
+        },
+        "languageInteraction": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_langauge_1",
+                "example_language_2"
+            ],
+            "style": {
+                "": null,
+                "example_langauge_1": null,
+                "example_language_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "locality": {
+            "type": "enum",
+            "options": [
+                "",
+                "locality_example_1",
+                "locality_example_2"
+            ],
+            "style": {
+                "": null,
+                "locality_example_1": null,
+                "locality_example_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "minutesDurationKoboForm": {
+            "notNull": false,
+            "type": "float",
+            "audited": true
+        },
+        "nationalSociety": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_national_society_1",
+                "example_national_society_2"
+            ],
+            "style": {
+                "": null,
+                "example_national_society_1": null,
+                "example_national_society_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "noteEnumerator": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "perceivedHelp": {
+            "type": "enum",
+            "options": [
+                "",
+                "yes",
+                "no"
+            ],
+            "style": {
+                "": null,
+                "yes": null,
+                "no": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "phonenumberKoboToolbox": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "preferredContactMethod": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                "",
+                "phone_call",
+                "sms",
+                "facebook",
+                "email",
+                "whatsapp",
+                "in_person_meeting",
+                "no_response_needed",
+                "other"
+            ],
+            "style": {
+                "": null,
+                "phone_call": null,
+                "sms": null,
+                "facebook": null,
+                "email": null,
+                "whatsapp": null,
+                "in_person_meeting": null,
+                "no_response_needed": null,
+                "other": null
+            },
+            "audited": true
+        },
+        "insights": {
+            "type": "linkMultiple"
+        },
+        "generatedTitle": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "tooltip": true
+        },
+        "preferredContactTime": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                "morning",
+                "afternoon",
+                "evening",
+                ""
+            ],
+            "style": {
+                "morning": null,
+                "afternoon": null,
+                "evening": null,
+                "": null
+            }
+        },
+        "processImprovementSuggestion": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "programParticipantSelection": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                "no-program",
+                "program-example-1",
+                "program-example-2"
+            ],
+            "style": {
+                "no-program": null,
+                "program-example-1": null,
+                "program-example-2": null
+            },
+            "audited": true
+        },
+        "project": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_project_1",
+                "example_project_2"
+            ],
+            "style": {
+                "": null,
+                "example_project_1": null,
+                "example_project_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "proxyRespondent": {
+            "type": "enum",
+            "options": [
+                "",
+                "self",
+                "someone_else",
+                "community"
+            ],
+            "style": {
+                "": null,
+                "self": null,
+                "someone_else": null,
+                "community": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "region": {
+            "type": "enum",
+            "options": [
+                "",
+                "region_example_1",
+                "region_example_2"
+            ],
+            "style": {
+                "": null,
+                "region_example_1": null,
+                "region_example_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "respondentAddress": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "respondentAgeGroup": {
+            "type": "enum",
+            "options": [
+                "",
+                "under_18",
+                "18_39",
+                "40_59",
+                "60_or_above",
+                "prefer_not_to_say",
+                "mixed",
+                "unknown"
+            ],
+            "style": {
+                "": null,
+                "under_18": null,
+                "18_39": null,
+                "40_59": null,
+                "60_or_above": null,
+                "prefer_not_to_say": null,
+                "mixed": null,
+                "unknown": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "respondentGender": {
+            "type": "enum",
+            "options": [
+                "",
+                "female",
+                "male",
+                "other",
+                "prefer_not_to_say"
+            ],
+            "style": {
+                "": null,
+                "female": null,
+                "male": null,
+                "other": null,
+                "prefer_not_to_say": null
+            },
+            "maxLength": 100,
+            "audited": true
+        },
+        "respondentName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "respondentPhone": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "responseGiven": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "satisfactionScore": {
+            "type": "enum",
+            "options": [
+                "",
+                "5",
+                "4",
+                "3",
+                "2",
+                "1"
+            ],
+            "style": {
+                "1": null,
+                "2": null,
+                "3": null,
+                "4": null,
+                "5": null,
+                "": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "secondaryPhoneNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "sensitive": {
+            "type": "enum",
+            "options": [
+                "",
+                "yes",
+                "no"
+            ],
+            "style": {
+                "": null,
+                "yes": null,
+                "no": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "serviceArea": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "default": [],
+            "options": [
+                ""
+            ],
+            "style": {
+                "": null
+            },
+            "audited": true
+        },
+        "shareConsent": {
+            "type": "enum",
+            "options": [
+                "",
+                "yes_anonymously",
+                "yes_with_name",
+                "no"
+            ],
+            "style": {
+                "": null,
+                "yes_anonymously": null,
+                "yes_with_name": null,
+                "no": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "site": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_1",
+                "example_2"
+            ],
+            "style": {
+                "": null,
+                "example_1": null,
+                "example_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "",
+                "open",
+                "in_progress",
+                "closed"
+            ],
+            "style": {
+                "": null,
+                "open": null,
+                "in_progress": null,
+                "closed": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "subDistrict": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_1",
+                "example_2"
+            ],
+            "style": {
+                "": null,
+                "example_1": null,
+                "example_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "topic": {
+            "type": "enum",
+            "options": [
+                "",
+                "example_1",
+                "example_2"
+            ],
+            "style": {
+                "": null,
+                "example_1": null,
+                "example_2": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "usernameKoboToolbox": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": []
+        },
+        "daysDifferenceBetweenCreatedClosed": {
+            "notNull": false,
+            "type": "float",
+            "decimalPlaces": 1
+        },
+        "adminLevel2": {
+            "type": "link"
+        },
+        "adminLevel3": {
+            "type": "link"
+        },
+        "dataOrigin": {
+            "type": "enum",
+            "options": [
+                "espocrm",
+                "kobotoolbox"
+            ],
+            "style": {
+                "espocrm": null,
+                "kobotoolbox": null
+            },
+            "default": "espocrm",
+            "audited": true,
+            "maxLength": 100
+        },
+        "adminLevel1": {
+            "type": "link"
+        },
+        "codingLevel1": {
+            "type": "link"
+        },
+        "codingLevel2": {
+            "type": "link"
+        },
+        "codingLevel3": {
+            "type": "link"
+        },
+        "feedbackChannel": {
+            "type": "enum",
+            "options": [
+                "",
+                "face_to_face",
+                "phone_call",
+                "sms",
+                "whatsapp",
+                "facebook",
+                "suggestion_box",
+                "community_meeting",
+                "physical_helpdesk",
+                "email",
+                "other"
+            ],
+            "style": {
+                "": null,
+                "face_to_face": null,
+                "phone_call": null,
+                "sms": null,
+                "whatsapp": null,
+                "facebook": null,
+                "suggestion_box": null,
+                "community_meeting": null,
+                "physical_helpdesk": null,
+                "email": null,
+                "other": null
+            },
+            "audited": true,
+            "maxLength": 100
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "insights": {
+            "type": "hasMany",
+            "relationName": "cInsightFeedbackData",
+            "foreign": "feedbackDatas",
+            "entity": "CInsight",
+            "audited": true
+        },
+        "adminLevel2": {
+            "type": "belongsTo",
+            "foreign": "feedbackDatas",
+            "entity": "CAdminLevel2",
+            "audited": false
+        },
+        "adminLevel3": {
+            "type": "belongsTo",
+            "foreign": "feedbackDatas",
+            "entity": "CAdminLevel3",
+            "audited": false
+        },
+        "adminLevel1": {
+            "type": "belongsTo",
+            "foreign": "feedbackDatas",
+            "entity": "CAdminlevel1",
+            "audited": false
+        },
+        "codingLevel1": {
+            "type": "belongsTo",
+            "foreign": "feedbackDatas",
+            "entity": "CCodingLevel1",
+            "audited": false
+        },
+        "codingLevel2": {
+            "type": "belongsTo",
+            "foreign": "feedbackDatas",
+            "entity": "CCodingLevel2",
+            "audited": false
+        },
+        "codingLevel3": {
+            "type": "belongsTo",
+            "foreign": "feedbackDatas",
+            "entity": "CCodingLevel3",
+            "audited": false
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "respondentAddress",
+            "respondentPhone",
+            "respondentName",
+            "feedbackDescription"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    },
+    "optimisticConcurrencyControl": false
+}

@@ -1,0 +1,24 @@
+{
+    "feedbackDatas": {
+        "index": 0
+    },
+    "_delimiter_": {
+        "index": 1
+    },
+    "stream": {
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isNotEmpty",
+                    "attribute": "feedbackDatasIds",
+                    "data": {
+                        "field": "feedbackDatas"
+                    }
+                }
+            ]
+        },
+        "style": "default",
+        "sticked": false,
+        "index": 2
+    }
+}

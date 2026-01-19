@@ -1,0 +1,21 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-magnifying-glass-location",
+    "relationshipPanels": {
+        "feedbackDatas": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "adminLevel1": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "adminLevel2": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

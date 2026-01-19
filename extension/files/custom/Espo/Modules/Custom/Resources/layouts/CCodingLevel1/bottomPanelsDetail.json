@@ -1,0 +1,15 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "codingLevel2": {
+        "index": 0
+    },
+    "codingLevel3": {
+        "index": 1
+    },
+    "stream": {
+        "sticked": false,
+        "index": 2
+    }
+}
