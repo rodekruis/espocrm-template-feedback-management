@@ -71,12 +71,12 @@ These are not required, but will improve your experience:
 ## Installation
 The following steps will install the template itself and recommends the installation of additions and changes to the UI. See [INSTALL.md](INSTALL.md) for a more detailed guide with screenshots, also for integration of KoboToolbox with template.
 
-1. Download the [latest release ZIP]() from this repository.  
+1. Download the [latest release ZIP](extension.zip) from this repository.  
 2. Log in as **Admin** in your EspoCRM instance.  
 3. Go to **Administration ▸ Extensions ▸ Import**.  
 4. Upload the ZIP file and Click `Install`
 6. **Import data files:**  
-   For every file in the [import folder]() of this repository, import it into EspoCRM:
+   For every file in the [import folder](/import) of this repository, import it into EspoCRM:
    1. Go to **Administration ▸ Import**.
    2. Under **What to Import? > Entity Type**, select the entity that matches the file name.  
       (For example: if the file is `Roles.csv`, select `Roles`.)
@@ -86,7 +86,7 @@ The following steps will install the template itself and recommends the installa
    1. Go to **Administration ▸ User Interface ▸ General**.
    2. Change **Theme** to `Light` and `Top Navbar` 
    2. Go to **Administration ▸ User Interface ▸ Navbar**.
-   4. Under **Tab List**, add the following in this order: `Feedback Data`, `...` and `Reports`
+   4. Under **Tab List**, add the following in this order: `Feedback Data`, `...` and `Reports` 
    5. Save your changes. Now, you have adjusted the layout, you will see these entities in your Navbar and can access them easily at any time.
 8. **Adjust general Settings:**
    1. Go to **Administration ▸ Settings ▸ Locale**
@@ -97,17 +97,25 @@ The following steps will install the template itself and recommends the installa
 ---
 
 ## How to Use
-For more in-depth guides for specific roles, see the [Guides]() section.
+At a high level, using the Feedback Management template typically involves the following steps:
 
-1. Open the **Feedback** entity in EspoCRM.  
+1. Open the **Feedback Data** entity in EspoCRM.  
 2. Click **Create Feedback** and fill in the form.  
-   - Add title, description, source, and choose a status.  
+   - Add feedback description, fill in fields and choose a status.  
    - Optionally assign to a team member.  
 3. Feedback is now added and visible in a list view.  
 4. Change feedback status as work progresses.  
 5. Use the **Dashboard** to get an overview of all feedback (counts, status).  
-6. For more examples and explanations, see [USER_GUIDE.md](USER_GUIDE.md).
+6. For more examples and explanations, see [User Guide](/guides/user.md).
 
+For more in-depth guides for specific roles, see the [Guides]() section.
+- [**Admin Guide**](/guides/admin.md) -  Explains core administrative setup, including system configuration, basic entities, and initial settings required to operate the template.
+- [**Cascading Selects Guide**](/guides/cascading-select.md) - Describes how hierarchical selections (e.g. administrative levels and coding frameworks) are structured, populated, and kept consistent using cascading selects.
+- [**Kobo Integration Guide**](/guides/kobo-integration.md) - Covers how to integrate KoboToolbox forms with EspoCRM to ingest feedback data, including mapping fields and handling structured submissions.
+- [**Qualitative Feedback Analysis (QFA) Guide**](/guides/qfa.md) - 
+  Provides guidance on organising, coding, and analysing qualitative feedback, including the use of coding frameworks and analysis workflows.
+- [**Roles and Teams Guide**](/guides/roles-and-teams.md) - 
+  Explains how to configure user roles, teams, and permissions to support safe collaboration and separation of responsibilities.
 
 
 ---
