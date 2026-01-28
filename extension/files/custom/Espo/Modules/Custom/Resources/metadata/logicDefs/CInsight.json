@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "insightsID": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "createdAt"
+                    }
+                ]
+            }
+        }
+    }
+}

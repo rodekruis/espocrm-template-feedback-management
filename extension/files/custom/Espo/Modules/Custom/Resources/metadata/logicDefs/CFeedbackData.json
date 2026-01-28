@@ -1,0 +1,105 @@
+{
+    "fields": {
+        "generatedTitle": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "feedbackDescription"
+                    },
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "id"
+                    }
+                ]
+            }
+        },
+        "feedbackFormID": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "createdAt"
+                    }
+                ]
+            }
+        },
+        "respondentName": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "followUpNeeded",
+                        "value": "yes"
+                    }
+                ]
+            }
+        },
+        "respondentPhone": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "followUpNeeded",
+                        "value": "yes"
+                    }
+                ]
+            }
+        },
+        "languageInteraction": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "followUpNeeded",
+                        "value": "yes"
+                    }
+                ]
+            }
+        },
+        "noteEnumerator": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "dataOrigin",
+                        "value": "kobotoolbox"
+                    }
+                ]
+            }
+        },
+        "enumeratorName": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "dataOrigin",
+                        "value": "kobotoolbox"
+                    }
+                ]
+            }
+        },
+        "enumeratorPhone": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "dataOrigin",
+                        "value": "kobotoolbox"
+                    }
+                ]
+            }
+        },
+        "enumeratorEmail": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "dataOrigin",
+                        "value": "kobotoolbox"
+                    }
+                ]
+            }
+        }
+    }
+}
