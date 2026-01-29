@@ -80,13 +80,14 @@ The following steps will install the template itself and recommends the installa
    1. Go to **Administration ▸ Import**.
    2. Under **What to Import? > Entity Type**, select the entity that matches the file name.  
       (For example: if the file is `Roles.csv`, select `Roles`.)
-   3. Click **Next**.
-   4. Click **Run Import**.
+      (koboconnect.csv can be imported in the `Roles` entity, if Kobo is being used to collect data)
+   4. Click **Next**.
+   5. Click **Run Import**.
 7. **Make entities visible in the Navbar:**
    1. Go to **Administration ▸ User Interface ▸ General**.
    2. Change **Theme** to `Light` and `Top Navbar` 
    2. Go to **Administration ▸ User Interface ▸ Navbar**.
-   4. Under **Tab List**, add the following in this order: `Feedback Data`, `...` and `Reports` 
+   4. Under **Tab List**, remove all entities listed and add the following in this order: `Feedback Data`, `...` and `Reports` 
    5. Save your changes. Now, you have adjusted the layout, you will see these entities in your Navbar and can access them easily at any time.
 8. **Adjust general Settings:**
    1. Go to **Administration ▸ Settings ▸ Locale**
