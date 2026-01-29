@@ -79,8 +79,8 @@ The following steps will install the template itself and recommends the installa
    For every file in the [import folder](/import) of this repository, import it into EspoCRM:
    1. Go to **Administration ▸ Import**.
    2. Under **What to Import? > Entity Type**, select the entity that matches the file name.  
-      (For example: if the file is `Roles.csv`, select `Roles`.)
-      (koboconnect.csv can be imported in the `Roles` entity, if Kobo is being used to collect data)
+      - (For example: if the file is `Roles.csv`, select `Roles`.)
+      - (koboconnect.csv can be imported in the `Roles` entity, if Kobo is being used to collect data)
    4. Click **Next**.
    5. Click **Run Import**.
 7. **Make entities visible in the Navbar:**
