@@ -39,5 +39,6 @@
         }
     },
     "kanbanViewMode": false,
-    "color": null
+    "color": null,
+    "sidePanels": {}
 }
