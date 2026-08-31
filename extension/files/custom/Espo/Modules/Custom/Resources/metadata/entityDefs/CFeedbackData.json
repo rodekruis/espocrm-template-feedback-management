@@ -108,81 +108,27 @@
             "options": [
                 "",
                 "example_country_1",
-                "example_country_2"
+                "example_country_2",
+                "chad",
+                "eswatini"
             ],
             "style": {
                 "": null,
                 "example_country_1": null,
-                "example_country_2": null
+                "example_country_2": null,
+                "chad": null,
+                "eswatini": null
             },
             "audited": true,
             "maxLength": 100
         },
-        "datetimeClosed": {
-            "notNull": false,
-            "type": "datetime",
-            "audited": true,
-            "minuteStep": 10,
-            "readOnly": true
-        },
-        "datetimeFeedbackCollectionEnded": {
-            "notNull": false,
-            "type": "datetime",
-            "minuteStep": 1,
-            "audited": true
-        },
-        "datetimeFeedbackCollectionEndedRaw": {
-            "type": "varchar",
-            "maxLength": 100,
-            "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
-        },
-        "datetimeFeedbackCollectionStarted": {
-            "notNull": false,
-            "type": "datetime",
-            "minuteStep": 1,
-            "audited": true
-        },
-        "datetimeFeedbackCollectionStartedRaw": {
-            "type": "varchar",
-            "maxLength": 100,
-            "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
-        },
-        "datetimeReceived": {
-            "notNull": false,
-            "type": "datetime",
-            "minuteStep": 10,
-            "audited": true
-        },
-        "datetimeReceivedByKoboToolboxServer": {
-            "notNull": false,
-            "type": "datetime",
-            "minuteStep": 1,
-            "audited": true,
-            "readOnlyAfterCreate": true
-        },
-        "datetimeReceivedByKoboToolboxServerRaw": {
-            "type": "varchar",
-            "maxLength": 100,
-            "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
-        },
-        "datetimeReceivedRaw": {
-            "type": "varchar",
-            "maxLength": 100,
-            "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
-        },
         "deviceIDKoboToolbox": {
             "type": "varchar",
-            "maxLength": 100,
+            "maxLength": 500,
             "audited": true,
-            "options": []
+            "options": [],
+            "readOnly": true,
+            "tooltip": true
         },
         "district": {
             "type": "enum",
@@ -221,7 +167,9 @@
             "type": "text",
             "rowsMin": 2,
             "cutHeight": 200,
-            "audited": true
+            "audited": true,
+            "isSensitive": true,
+            "readOnlyAfterCreate": false
         },
         "feedbackFormID": {
             "type": "number",
@@ -338,22 +286,28 @@
             "type": "varchar",
             "maxLength": 100,
             "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
+            "readOnlyAfterCreate": false,
+            "options": [],
+            "readOnly": true,
+            "tooltip": true
         },
         "koboToolboxFormVersion": {
             "type": "varchar",
             "maxLength": 100,
             "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
+            "readOnlyAfterCreate": false,
+            "options": [],
+            "readOnly": true,
+            "tooltip": true
         },
         "koboToolboxUUID": {
             "type": "varchar",
             "maxLength": 100,
             "audited": true,
-            "readOnlyAfterCreate": true,
-            "options": []
+            "readOnlyAfterCreate": false,
+            "options": [],
+            "readOnly": true,
+            "tooltip": true
         },
         "languageInteraction": {
             "type": "enum",
@@ -384,11 +338,6 @@
             },
             "audited": true,
             "maxLength": 100
-        },
-        "minutesDurationKoboForm": {
-            "notNull": false,
-            "type": "float",
-            "audited": true
         },
         "nationalSociety": {
             "type": "enum",
@@ -430,7 +379,9 @@
             "type": "varchar",
             "maxLength": 100,
             "audited": true,
-            "options": []
+            "options": [],
+            "readOnly": true,
+            "tooltip": true
         },
         "preferredContactMethod": {
             "type": "multiEnum",
@@ -622,7 +573,8 @@
             "type": "text",
             "rowsMin": 2,
             "cutHeight": 200,
-            "audited": true
+            "audited": true,
+            "isSensitive": true
         },
         "satisfactionScore": {
             "type": "enum",
@@ -759,9 +711,11 @@
         },
         "usernameKoboToolbox": {
             "type": "varchar",
-            "maxLength": 100,
+            "maxLength": 500,
             "audited": true,
-            "options": []
+            "options": [],
+            "readOnly": true,
+            "tooltip": true
         },
         "daysDifferenceBetweenCreatedClosed": {
             "notNull": false,
@@ -827,6 +781,456 @@
                 "physical_helpdesk": null,
                 "email": null,
                 "other": null
+            },
+            "audited": true,
+            "maxLength": 100
+        },
+        "autoSensitive": {
+            "notNull": true,
+            "type": "bool",
+            "readOnlyAfterCreate": false,
+            "tooltip": true,
+            "audited": true
+        },
+        "autoSensitiveExplanation": {
+            "type": "varchar",
+            "maxLength": 500,
+            "audited": true,
+            "options": []
+        },
+        "suggestedFollowUpActions": {
+            "type": "varchar",
+            "maxLength": 1000,
+            "copyToClipboard": true,
+            "audited": true,
+            "options": [],
+            "tooltip": true
+        },
+        "dateTimePaperRecorded": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "readOnly": true,
+            "minuteStep": 30,
+            "tooltip": true
+        },
+        "dateTimeKoboStarted": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30,
+            "tooltip": true,
+            "readOnly": true
+        },
+        "dateTimePaperRecordedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": [],
+            "tooltip": true,
+            "readOnly": false,
+            "readOnlyAfterCreate": true
+        },
+        "dateTimeKoboStartedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": [],
+            "tooltip": true,
+            "readOnly": false,
+            "readOnlyAfterCreate": true
+        },
+        "dateTimeKoboCompleted": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30,
+            "tooltip": true,
+            "readOnly": true
+        },
+        "dateTimeKoboCompletedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": [],
+            "tooltip": true,
+            "readOnly": false,
+            "readOnlyAfterCreate": true
+        },
+        "dateTimeKoboSubmitted": {
+            "notNull": false,
+            "type": "datetime",
+            "minuteStep": 30,
+            "tooltip": true,
+            "audited": true,
+            "readOnly": true
+        },
+        "dateTimeKoboSubmittedRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "options": [],
+            "tooltip": true,
+            "readOnly": false,
+            "readOnlyAfterCreate": true
+        },
+        "dateTimeFollowUpNeeded": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30,
+            "tooltip": true,
+            "readOnly": true
+        },
+        "dateTimeAssigned": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30,
+            "tooltip": true,
+            "readOnly": true
+        },
+        "dateTimeClosed": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30,
+            "tooltip": true,
+            "readOnly": true
+        },
+        "durationKoboCompletion": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "readOnly": true,
+            "tooltip": true,
+            "decimalPlaces": 0
+        },
+        "durationPaperToDigital": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "readOnly": true,
+            "tooltip": true,
+            "decimalPlaces": 2
+        },
+        "durationToAssignment": {
+            "notNull": false,
+            "type": "float",
+            "readOnly": true,
+            "audited": true,
+            "tooltip": true,
+            "decimalPlaces": 2
+        },
+        "durationToFollowUp": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "readOnly": true,
+            "tooltip": true,
+            "decimalPlaces": 2
+        },
+        "durationToClosure": {
+            "notNull": false,
+            "type": "float",
+            "readOnly": true,
+            "audited": true,
+            "decimalPlaces": 2,
+            "tooltip": true
+        },
+        "durationKoboToDigital": {
+            "notNull": false,
+            "type": "float",
+            "readOnly": true,
+            "audited": true,
+            "tooltip": true,
+            "decimalPlaces": 2
+        },
+        "durationAssignmentToClosure": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "readOnly": true,
+            "decimalPlaces": 2
+        },
+        "dateTimeEventOccurred": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30,
+            "tooltip": true,
+            "readOnly": true
+        },
+        "dateTimeEventOccurredRaw": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true,
+            "readOnly": false,
+            "options": [],
+            "tooltip": true,
+            "readOnlyAfterCreate": true
+        },
+        "durationEventToReporting": {
+            "notNull": false,
+            "type": "float",
+            "readOnly": true,
+            "audited": true,
+            "tooltip": true,
+            "decimalPlaces": 2
+        },
+        "durationCommunityToAssignment": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "readOnly": true,
+            "decimalPlaces": 2,
+            "tooltip": true
+        },
+        "durationCommunityToClosureDecomposed": {
+            "notNull": false,
+            "type": "float",
+            "audited": true,
+            "readOnly": true,
+            "decimalPlaces": 2,
+            "tooltip": true
+        },
+        "durationReportingDelayShare": {
+            "notNull": false,
+            "type": "float",
+            "decimalPlaces": 2,
+            "audited": true,
+            "readOnly": true,
+            "tooltip": true
+        },
+        "durationDigitalToClosure": {
+            "notNull": false,
+            "type": "float",
+            "tooltip": true,
+            "decimalPlaces": 2,
+            "audited": true,
+            "readOnly": true
+        },
+        "statusKobo": {
+            "type": "varchar",
+            "maxLength": 100,
+            "readOnly": true,
+            "audited": true,
+            "options": [],
+            "tooltip": true
+        },
+        "submittedByNameKobo": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "readOnly": true,
+            "tooltip": true
+        },
+        "autoSummaryEnabled": {
+            "notNull": true,
+            "type": "bool",
+            "tooltip": true,
+            "audited": true
+        },
+        "autoCodingEnabled": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true,
+            "tooltip": true
+        },
+        "feedbackDescriptionTranslated": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "isSensitive": true
+        },
+        "autoSensitiveEnabled": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true,
+            "tooltip": true
+        },
+        "isSensitiveRecord": {
+            "notNull": true,
+            "type": "bool",
+            "sensitiveFlag": true
+        },
+        "autoCodingExplanation": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "audited": true
+        },
+        "autoCodingRequested": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true
+        },
+        "autoSummaryRequested": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true
+        },
+        "autoSensitiveRequested": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true
+        },
+        "autoCodingStatus": {
+            "type": "enum",
+            "options": [
+                "not_requested",
+                "requested",
+                "processing",
+                "completed",
+                "failed",
+                "human_review_required"
+            ],
+            "style": {
+                "not_requested": null,
+                "requested": null,
+                "processing": "info",
+                "completed": "success",
+                "failed": "danger",
+                "human_review_required": "warning"
+            },
+            "default": "not_requested",
+            "audited": true,
+            "tooltip": true,
+            "maxLength": 100,
+            "displayAsLabel": true
+        },
+        "autoSummaryStatus": {
+            "type": "enum",
+            "options": [
+                "not_requested",
+                "requested",
+                "processing",
+                "completed",
+                "failed",
+                "human_review_required"
+            ],
+            "style": {
+                "not_requested": null,
+                "requested": null,
+                "processing": "info",
+                "completed": "success",
+                "failed": "danger",
+                "human_review_required": "warning"
+            },
+            "default": "not_requested",
+            "audited": true,
+            "tooltip": true,
+            "maxLength": 100,
+            "displayAsLabel": true
+        },
+        "autoSensitiveStatus": {
+            "type": "enum",
+            "style": {
+                "not_requested": null,
+                "requested": null,
+                "processing": "info",
+                "completed": "success",
+                "failed": "danger",
+                "human_review_required": "warning"
+            },
+            "tooltip": true,
+            "maxLength": 100,
+            "options": [
+                "not_requested",
+                "requested",
+                "processing",
+                "completed",
+                "failed",
+                "human_review_required"
+            ],
+            "default": "not_requested",
+            "audited": true,
+            "displayAsLabel": true
+        },
+        "autoSensitiveErrorCode": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": "-",
+            "readOnly": true,
+            "audited": true
+        },
+        "autoSensitiveErrorMessage": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": "-",
+            "readOnly": true,
+            "audited": true
+        },
+        "autoCodingErrorCode": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "default": "-",
+            "audited": true
+        },
+        "autoCodingErrorMessage": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "audited": true
+        },
+        "autoSummaryErrorCode": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "default": "-",
+            "audited": true
+        },
+        "autoSummaryErrorMessage": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "default": "-",
+            "readOnly": true,
+            "audited": true
+        },
+        "descriptionSummary": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true
+        },
+        "autoCodingConfidence": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnlyAfterCreate": true,
+            "audited": true
+        },
+        "feedbackType": {
+            "type": "enum",
+            "options": [
+                "",
+                "Observation, perception or belief",
+                "Suggestion",
+                "Appreciation",
+                "Request",
+                "Question",
+                "Reports and concerns",
+                "Allegations and incident report"
+            ],
+            "style": {
+                "": null,
+                "Observation, perception or belief": null,
+                "Suggestion": null,
+                "Appreciation": null,
+                "Request": null,
+                "Question": null,
+                "Reports and concerns": null,
+                "Allegations and incident report": null
             },
             "audited": true,
             "maxLength": 100

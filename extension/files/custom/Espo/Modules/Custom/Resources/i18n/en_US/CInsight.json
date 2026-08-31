@@ -23,7 +23,12 @@
         "title": "Title",
         "totalCost": "Total Cost",
         "userPromptInstructions": "Instructions on using",
-        "feedbackDatas": "Feedback data to analyze"
+        "feedbackDatas": "Feedback data to analyze",
+        "method": "Method",
+        "outputLanguage": "Output Language",
+        "autoInsightErrorCode": "Insight Error Code (AI)",
+        "autoInsightErrorMessage": "Insight Error Message (AI)",
+        "autoInsightStatus": "Insight Status (AI)"
     },
     "links": {
         "feedbackDatas": "Selection of Feedback Forms"
@@ -38,7 +43,8 @@
         "freeTextPrompt": "Make your question or topic as specific as possible and preferably only focus on one topic",
         "modelResponse": "This response is AI-generated and based solely on information found in the provided feedback forms. It may contain inaccuracies or omissions. Please verify any important information before relying on this answer.",
         "totalCost": "In Euro",
-        "feedbackDatas": "Filter and select only the most relevant feedback forms. The system can not handle too many feedback forms at once. Please note that only the 'feedback description' field of the form will be used in the analysis."
+        "feedbackDatas": "Filter and select only the most relevant feedback forms. The system can not handle too many feedback forms at once. Please note that only the 'feedback description' field of the form will be used in the analysis.",
+        "method": "Select mode"
     },
     "options": {
         "insightVerified": {
@@ -46,6 +52,32 @@
             "approve": "Approve",
             "review": "Review",
             "decline": "Decline"
+        },
+        "method": {
+            "": "",
+            "analyze": "Analyze",
+            "summarize": "Summarize",
+            "code": "Code",
+            "summarize_aggregate": "Summarize (into one summary)",
+            "summarize_per_item": "Summarize (per item)"
+        },
+        "outputLanguage": {
+            "English": "English",
+            "French": "French",
+            "Ukrainian": "Ukrainian",
+            "": "",
+            "Russian": "Russian",
+            "english": "English",
+            "ukrainian": "Ukrainian",
+            "french": "French",
+            "russian": "Russian"
+        },
+        "autoInsightStatus": {
+            "queued": "Queued",
+            "processing": "Processing",
+            "completed": "Completed",
+            "failed": "Failed",
+            "not_started": "Not Started"
         }
     }
 }

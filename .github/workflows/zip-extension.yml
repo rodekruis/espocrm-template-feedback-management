@@ -18,6 +18,12 @@ jobs:
       with:
         path: './repo/'
 
+    # Runs before anything is removed or committed, so a broken tree fails the job
+    # without leaving the repo without an extension.zip.
+    - name: Validate extension
+      run: python3 tools/validate-extension.py extension
+      working-directory: './repo/'
+
     - name: Remove old zip file
       uses: EndBug/add-and-commit@v9
       with:

@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "cLastLoginAt": {
+            "notNull": false,
+            "type": "datetime",
+            "audited": true,
+            "minuteStep": 30
+        }
+    }
+}

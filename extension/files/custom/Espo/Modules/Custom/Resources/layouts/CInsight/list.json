@@ -12,11 +12,7 @@
     },
     {
         "name": "modelResponse",
-        "width": 16
-    },
-    {
-        "name": "numberOfFormsUsed",
-        "width": 15,
+        "width": 50,
         "align": "left"
     },
     {

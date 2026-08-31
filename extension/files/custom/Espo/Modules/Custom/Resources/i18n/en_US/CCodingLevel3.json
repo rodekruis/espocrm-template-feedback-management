@@ -2,7 +2,8 @@
     "fields": {
         "codingLevel2": "Coding Level 2",
         "codingLevel1": "Coding Level 1",
-        "feedbackDatas": "Feedback Datas"
+        "feedbackDatas": "Feedback Datas",
+        "nameEn": "NameEn"
     },
     "links": {
         "codingLevel2": "Coding Level 2",

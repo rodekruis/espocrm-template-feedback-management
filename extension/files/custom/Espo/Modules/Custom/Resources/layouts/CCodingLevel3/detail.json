@@ -15,6 +15,14 @@
                 {
                     "name": "name"
                 }
+            ],
+            [
+                {
+                    "name": "nameEn"
+                },
+                {
+                    "name": "description"
+                }
             ]
         ],
         "style": "default",

@@ -43,6 +43,11 @@
         },
         "feedbackDatas": {
             "type": "linkMultiple"
+        },
+        "nameEn": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200
         }
     },
     "links": {

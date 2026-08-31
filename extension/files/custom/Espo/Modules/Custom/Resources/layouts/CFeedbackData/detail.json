@@ -14,6 +14,19 @@
                 {
                     "name": "feedbackDescription"
                 }
+            ],
+            [
+                {
+                    "name": "additionalComments"
+                }
+            ],
+            [
+                {
+                    "name": "autoSummaryStatus"
+                },
+                {
+                    "name": "descriptionSummary"
+                }
             ]
         ],
         "dynamicLogicVisible": null,
@@ -22,7 +35,7 @@
         "tabBreak": false,
         "hidden": false,
         "noteText": null,
-        "customLabel": "Feedback Form Information"
+        "customLabel": "Feedback content"
     },
     {
         "rows": [
@@ -39,13 +52,32 @@
             ],
             [
                 {
-                    "name": "project"
+                    "name": "autoCodingStatus"
                 },
                 {
-                    "name": "feedbackChannel"
+                    "name": "autoCodingConfidence"
+                },
+                {
+                    "name": "autoCodingExplanation"
+                }
+            ],
+            [
+                {
+                    "name": "feedbackType"
                 },
                 {
                     "name": "sensitive"
+                }
+            ],
+            [
+                {
+                    "name": "autoSensitiveStatus"
+                },
+                {
+                    "name": "autoSensitive"
+                },
+                {
+                    "name": "autoSensitiveExplanation"
                 }
             ]
         ],
@@ -57,10 +89,21 @@
         "hidden": false,
         "noteText": null,
         "noteStyle": "info",
-        "customLabel": "Additional Information"
+        "customLabel": "Classification"
     },
     {
         "rows": [
+            [
+                {
+                    "name": "project"
+                },
+                {
+                    "name": "feedbackChannel"
+                },
+                {
+                    "name": "languageInteraction"
+                }
+            ],
             [
                 {
                     "name": "adminLevel1"
@@ -81,19 +124,7 @@
         "hidden": false,
         "noteText": null,
         "noteStyle": "info",
-        "customLabel": "Location"
-    },
-    {
-        "rows": [],
-        "dynamicLogicVisible": null,
-        "style": "info",
-        "dynamicLogicStyled": null,
-        "tabBreak": false,
-        "tabLabel": null,
-        "hidden": true,
-        "noteText": null,
-        "noteStyle": "info",
-        "customLabel": "Feedback Respondent Information"
+        "customLabel": "Source and context"
     },
     {
         "rows": [
@@ -101,18 +132,19 @@
                 {
                     "name": "followUpNeeded"
                 },
-                false,
-                false
-            ],
-            [
                 {
                     "name": "respondentName"
                 },
                 {
                     "name": "respondentPhone"
+                }
+            ],
+            [
+                {
+                    "name": "status"
                 },
                 {
-                    "name": "languageInteraction"
+                    "name": "feedbackPriorityLevel"
                 }
             ]
         ],
@@ -124,19 +156,10 @@
         "hidden": false,
         "noteText": null,
         "noteStyle": "info",
-        "customLabel": "Follow-up Needed"
+        "customLabel": "Follow-up"
     },
     {
         "rows": [
-            [
-                {
-                    "name": "status"
-                },
-                {
-                    "name": "feedbackPriorityLevel"
-                },
-                false
-            ],
             [
                 {
                     "name": "responseGiven"
@@ -151,6 +174,125 @@
         "hidden": false,
         "noteText": null,
         "noteStyle": "info",
-        "customLabel": "Action Panel"
+        "customLabel": "Response"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "dateTimeEventOccurredRaw"
+                },
+                {
+                    "name": "dateTimeEventOccurred"
+                }
+            ],
+            [
+                {
+                    "name": "dateTimePaperRecordedRaw"
+                },
+                {
+                    "name": "dateTimePaperRecorded"
+                }
+            ],
+            [
+                {
+                    "name": "dateTimeKoboStartedRaw"
+                },
+                {
+                    "name": "dateTimeKoboStarted"
+                }
+            ],
+            [
+                {
+                    "name": "dateTimeKoboCompletedRaw"
+                },
+                {
+                    "name": "dateTimeKoboCompleted"
+                },
+                {
+                    "name": "durationKoboCompletion"
+                }
+            ],
+            [
+                {
+                    "name": "dateTimeKoboSubmittedRaw"
+                },
+                {
+                    "name": "dateTimeKoboSubmitted"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "dateTimeFollowUpNeeded"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "dateTimeAssigned"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "dateTimeClosed"
+                }
+            ],
+            [
+                {
+                    "name": "durationAssignmentToClosure"
+                },
+                {
+                    "name": "durationCommunityToAssignment"
+                }
+            ],
+            [
+                {
+                    "name": "durationEventToReporting"
+                },
+                {
+                    "name": "durationCommunityToClosureDecomposed"
+                }
+            ],
+            [
+                {
+                    "name": "durationToAssignment"
+                },
+                {
+                    "name": "durationReportingDelayShare"
+                }
+            ],
+            [
+                {
+                    "name": "durationToFollowUp"
+                },
+                {
+                    "name": "durationToClosure"
+                }
+            ],
+            [
+                {
+                    "name": "durationKoboToDigital"
+                },
+                {
+                    "name": "durationPaperToDigital"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "durationDigitalToClosure"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": true,
+        "tabLabel": "Metadata",
+        "hidden": true,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Dev panel for datetimes"
     }
 ]

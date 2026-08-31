@@ -6,10 +6,18 @@
     "createdAt",
     "assignedUser",
     "languageInteraction",
+    "teams",
     "adminLevel1",
     "adminLevel2",
     "adminLevel3",
     "codingLevel1",
     "codingLevel2",
-    "codingLevel3"
+    "codingLevel3",
+    "noteEnumerator",
+    "autoSummaryStatus",
+    "autoCodingStatus",
+    "autoSensitiveStatus",
+    "autoSummaryErrorCode",
+    "autoCodingErrorCode",
+    "autoSensitiveErrorCode"
 ]

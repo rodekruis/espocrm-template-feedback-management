@@ -7,7 +7,8 @@
         "CAdminLevel3": "Admin Level 3",
         "CCodingLevel1": "Coding Level 1",
         "CCodingLevel2": "Coding Level 2",
-        "CCodingLevel3": "Coding Level 3"
+        "CCodingLevel3": "Coding Level 3",
+        "CReporting": "Reporting"
     },
     "scopeNamesPlural": {
         "CFeedbackData": "Feedback Data",
@@ -17,6 +18,7 @@
         "CAdminLevel3": "Admin Level 3s",
         "CCodingLevel1": "Coding Level 1s",
         "CCodingLevel2": "Coding Level 2s",
-        "CCodingLevel3": "Coding Level 3s"
+        "CCodingLevel3": "Coding Level 3s",
+        "CReporting": "Reportings"
     }
 }
