@@ -47,15 +47,7 @@
             }
         },
         "languageInteraction": {
-            "visible": {
-                "conditionGroup": [
-                    {
-                        "type": "equals",
-                        "attribute": "followUpNeeded",
-                        "value": "yes"
-                    }
-                ]
-            }
+            "visible": null
         },
         "noteEnumerator": {
             "visible": {
@@ -100,6 +92,215 @@
                     }
                 ]
             }
+        },
+        "autoSensitiveExplanation": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSensitiveStatus",
+                        "value": "completed"
+                    }
+                ]
+            }
+        },
+        "autoCodingRequested": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isTrue",
+                        "attribute": "autoCodingEnabled"
+                    }
+                ]
+            }
+        },
+        "autoSummaryRequested": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isTrue",
+                        "attribute": "autoSummaryEnabled"
+                    }
+                ]
+            }
+        },
+        "autoSensitiveRequested": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isTrue",
+                        "attribute": "autoSensitiveEnabled"
+                    }
+                ]
+            }
+        },
+        "feedbackPriorityLevel": {
+            "invalid": null
+        },
+        "autoCodingStatus": {
+            "invalid": null
+        },
+        "autoSummaryStatus": {
+            "invalid": null
+        },
+        "autoSensitiveStatus": {
+            "invalid": null
+        },
+        "descriptionSummary": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "descriptionSummary"
+                    }
+                ]
+            }
+        },
+        "autoCodingConfidence": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isNotEmpty",
+                        "attribute": "autoCodingConfidence"
+                    }
+                ]
+            }
+        },
+        "autoSensitive": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSensitiveStatus",
+                        "value": "completed"
+                    }
+                ]
+            }
         }
+    },
+    "options": {
+        "autoSummaryStatus": [
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSummaryStatus",
+                        "value": "not_requested"
+                    }
+                ]
+            },
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSummaryStatus",
+                        "value": "completed"
+                    }
+                ]
+            },
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSummaryStatus",
+                        "value": "failed"
+                    }
+                ]
+            }
+        ],
+        "autoCodingStatus": [
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoCodingStatus",
+                        "value": "not_requested"
+                    }
+                ]
+            },
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoCodingStatus",
+                        "value": "completed"
+                    }
+                ]
+            },
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoCodingStatus",
+                        "value": "failed"
+                    }
+                ]
+            }
+        ],
+        "autoSensitiveStatus": [
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSensitiveStatus",
+                        "value": "not_requested"
+                    }
+                ]
+            },
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSensitiveStatus",
+                        "value": "completed"
+                    }
+                ]
+            },
+            {
+                "optionList": [
+                    "not_requested",
+                    "requested"
+                ],
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "autoSensitiveStatus",
+                        "value": "failed"
+                    }
+                ]
+            }
+        ]
     }
 }

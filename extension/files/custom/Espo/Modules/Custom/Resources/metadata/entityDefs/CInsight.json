@@ -80,7 +80,8 @@
             "rowsMin": 2,
             "cutHeight": 200,
             "audited": true,
-            "tooltip": true
+            "tooltip": true,
+            "readOnlyAfterCreate": true
         },
         "insightVerified": {
             "type": "enum",
@@ -195,7 +196,83 @@
             "type": "linkMultiple",
             "audited": true,
             "required": true,
-            "tooltip": true
+            "tooltip": true,
+            "readOnlyAfterCreate": true
+        },
+        "method": {
+            "type": "enum",
+            "options": [
+                "",
+                "summarize_aggregate",
+                "analyze"
+            ],
+            "style": {
+                "": null,
+                "summarize_aggregate": null,
+                "analyze": null
+            },
+            "audited": true,
+            "tooltip": true,
+            "maxLength": 100,
+            "readOnlyAfterCreate": true
+        },
+        "outputLanguage": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "",
+                "english",
+                "ukrainian",
+                "french",
+                "russian"
+            ],
+            "style": {
+                "": null,
+                "english": null,
+                "ukrainian": null,
+                "french": null,
+                "russian": null
+            },
+            "default": null,
+            "isSorted": true,
+            "audited": true,
+            "maxLength": 100
+        },
+        "autoInsightErrorCode": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "default": "-",
+            "audited": true
+        },
+        "autoInsightErrorMessage": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "readOnly": true,
+            "audited": true
+        },
+        "autoInsightStatus": {
+            "type": "enum",
+            "options": [
+                "queued",
+                "processing",
+                "completed",
+                "failed",
+                "not_started"
+            ],
+            "style": {
+                "queued": "info",
+                "processing": "info",
+                "completed": "success",
+                "failed": "danger",
+                "not_started": null
+            },
+            "default": "not_started",
+            "audited": true,
+            "readOnly": true,
+            "maxLength": 100
         }
     },
     "links": {
@@ -235,7 +312,14 @@
     },
     "collection": {
         "orderBy": "createdAt",
-        "order": "desc"
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "freeTextPrompt",
+            "modelResponse"
+        ],
+        "fullTextSearch": true,
+        "countDisabled": false
     },
     "indexes": {
         "name": {
@@ -262,5 +346,6 @@
                 "id"
             ]
         }
-    }
+    },
+    "optimisticConcurrencyControl": false
 }

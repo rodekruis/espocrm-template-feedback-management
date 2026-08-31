@@ -19,5 +19,12 @@
     "type": "Base",
     "module": "Custom",
     "object": true,
+    "statusField": null,
+    "kanbanStatusIgnoreList": null,
+    "stars": false,
+    "preserveAuditLog": false,
+    "duplicateCheckFieldList": [],
+    "collaborators": false,
+    "assignedUsers": false,
     "isCustomExported": true
 }

@@ -6,8 +6,9 @@
         "align": "left"
     },
     {
-        "name": "generatedTitle",
-        "width": 16
+        "name": "feedbackDescription",
+        "width": 50,
+        "align": "left"
     },
     {
         "name": "status",
@@ -18,11 +19,11 @@
         "width": 16
     },
     {
-        "name": "assignedUser",
+        "name": "createdAt",
         "width": 16
     },
     {
-        "name": "createdAt",
+        "name": "assignedUser",
         "width": 16
     }
 ]

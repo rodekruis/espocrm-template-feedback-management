@@ -1,0 +1,5 @@
+{
+    "SyncUserLastLoginAt": {
+        "jobClassName": "Espo\\Modules\\Custom\\Jobs\\SyncUserLastLoginAt"
+    }
+}

@@ -9,6 +9,15 @@
             [
                 {
                     "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "nameEn"
+                },
+                {
+                    "name": "description"
                 }
             ]
         ],

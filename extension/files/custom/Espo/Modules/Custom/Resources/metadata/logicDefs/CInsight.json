@@ -9,6 +9,29 @@
                     }
                 ]
             }
+        },
+        "freeTextPrompt": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "method",
+                        "value": "analyze"
+                    }
+                ]
+            },
+            "required": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "method",
+                        "value": "analyze"
+                    }
+                ]
+            }
+        },
+        "feedbackDatas": {
+            "visible": null
         }
     }
 }

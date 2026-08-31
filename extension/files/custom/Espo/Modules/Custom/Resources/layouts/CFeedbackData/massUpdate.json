@@ -1,5 +1,8 @@
 [
     "assignedUser",
     "teams",
-    "feedbackChannel"
+    "feedbackChannel",
+    "autoSummaryStatus",
+    "autoCodingStatus",
+    "autoSensitiveStatus"
 ]

@@ -1,11 +1,11 @@
 {
     "name": "Feedback Management Template",
-    "version": "0.1.4",
+    "version": "0.3.5",
     "author": "Daan Gorsse",
     "skipBackup": true,
-    "releaseDate": "2026-03-30",
+    "releaseDate": "2026-08-31",
     "description": "This template enables you to easily record, track, and manage feedback from staff, volunteers or community members, all within EspoCRM with the possibility to integrate with KoboToolbox. It provides simple forms, clear status tracking, and visual dashboards to help humanitarian teams improve feedback handling.",
     "acceptableVersions": [
-        ">=8.0.0"
+        ">=10.0.0"
     ]
 }

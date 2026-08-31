@@ -10,16 +10,9 @@
         "width": 20
     },
     {
-        "name": "status",
-        "width": 20
-    },
-    {
-        "name": "feedbackPriorityLevel",
-        "width": 20
-    },
-    {
-        "name": "assignedUser",
-        "width": 20
+        "name": "feedbackDescription",
+        "width": 50,
+        "align": "left"
     },
     {
         "name": "createdAt",
